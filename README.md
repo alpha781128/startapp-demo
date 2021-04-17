@@ -2,4 +2,3 @@
 ﻿2)- For our solution we use sqlexpress, if your preferences to use others like localdb or sql lite ... change appsettings in the server project;
 ﻿3)- Execute your project, it will run the migration automatically...
 ﻿4)- For pro-version "not free" with all functionnalities contact me at alpha781128@hotmail.fr or alpha781128@gmail.com
-
