@@ -1,0 +1,173 @@
+﻿@inherits AddUserDialogBase
+
+
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" 
+     aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="articleModalLabel">@DialogTitle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <EditForm Model="@UserVM" OnValidSubmit="@HandleValidSubmit">
+                    <Blazored.FluentValidation.FluentValidationValidator />
+                    <div class="form-row">
+                        <input id="Id" hidden value="@UserVM.Id" />
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="UserName">@Translate.Keys["UserName"]: </label>
+                                <InputText id="UserName" class="form-control" @bind-Value="@UserVM.UserName" placeholder="@Translate.Keys["UserName"]"></InputText>
+                                <ValidationMessage For="@(() => UserVM.UserName)" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Email">@Translate.Keys["Email"]: </label>
+                                <InputText id="Email" class="form-control" @bind-Value="@UserVM.Email" placeholder="@Translate.Keys["Email"]"></InputText>
+                                <ValidationMessage For="@(() => UserVM.Email)" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="PhoneNumber">@Translate.Keys["PhoneNumber"]: </label>
+                                <InputText id="PhoneNumber" class="form-control" @bind-Value="@UserVM.PhoneNumber" placeholder="@Translate.Keys["PhoneNumber"]"></InputText>
+                                <ValidationMessage For="@(() => UserVM.PhoneNumber)" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="FirstName">@Translate.Keys["FirstName"]: </label>
+                                <InputText id="FirstName" class="form-control" @bind-Value="@UserVM.FirstName" placeholder="@Translate.Keys["FirstName"]"></InputText>
+                                <ValidationMessage For="@(() => UserVM.FirstName)" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="LastName">@Translate.Keys["LastName"]: </label>
+                                <InputText id="LastName" class="form-control" @bind-Value="@UserVM.LastName" placeholder="@Translate.Keys["LastName"]"></InputText>
+                                <ValidationMessage For="@(() => UserVM.LastName)" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="JobTitle">@Translate.Keys["JobTitle"]: </label>
+                                <InputText id="JobTitle" class="form-control" @bind-Value="@UserVM.JobTitle" placeholder="@Translate.Keys["JobTitle"]"></InputText>
+                                <ValidationMessage For="@(() => UserVM.JobTitle)" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <div class="switch">
+                                <label>
+                                    <input Id="IsEnabled" type="checkbox" checked="@UserVM.IsEnabled" />
+                                    <span class="lever"></span> @Translate.Keys["Enabled"]
+                                </label>
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                    <!-- Collapse buttons -->
+                    <div class="hide-div @Hidden">
+                        <button class="btn btn-primary hide-div" type="button" @onclick="@ChangePassword" data-toggle="collapse" data-target="#collapseExample"
+                                aria-expanded="false" aria-controls="collapseExample">
+                            @Translate.Keys["ChangePassword"]?
+                        </button>
+                    </div>
+                    <!-- / Collapse buttons -->
+                    <!-- Collapsible element -->
+                    <div class="@Collapse" id="collapseExample">
+                        <div class="mt-3">
+                            <div class="form-row">
+                                @if (!string.IsNullOrEmpty(User.PasswordHash))
+                                {
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="CurrentPassword">@Translate.Keys["CurrentPassword"]</label>
+                                            <LaInputText type="password" id="CurrentPassword" @bind-Value="UserVM.CurrentPassword"placeholder=" @Translate.Keys["CurrentPassword"]" class="form-control" />
+                                            <ValidationMessage For="@(() => UserVM.CurrentPassword)" />
+                                        </div>
+                                    </div>
+                                }
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="NewPassword">@Translate.Keys["NewPassword"]</label>
+                                        <LaInputText type="password" id="NewPassword" @bind-Value="UserVM.NewPassword" placeholder="@Translate.Keys["NewPassword"]" class="form-control" />
+                                        <ValidationMessage For="@(() => UserVM.NewPassword)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="ConfirmPassword">@Translate.Keys["ConfirmPassword"]</label>
+                                        <LaInputText type="password" id="ConfirmPassword" @bind-Value="UserVM.ConfirmPassword" placeholder="@Translate.Keys["ConfirmPassword"]" class="form-control" />
+                                        <ValidationMessage For="@(() => UserVM.ConfirmPassword)" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Collapsible element -->
+                    <div class="form-row">
+                        <div class="col-12">
+
+                            <!--Accordion wrapper-->
+                            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card">
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingOne1">
+                                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+                                           aria-controls="collapseOne1">
+                                            <h5 class="mb-0">
+                                                @Translate.Keys["Roles"] <i class="fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                                        <div class="card-body">
+                                            <InputSelect hidden id="Roles" @bind-Value="@UserVM.Roles"></InputSelect>
+                                            @foreach (var item in RoleVMs)
+                                            {
+                                                <div class="switch" style="display:inline-block !important">
+                                                    <label>
+                                                        <input Id="@item.Id" type="checkbox" checked="@item.Checked" @onchange="(e=>CheckboxClicked(e, item.Id))" />
+                                                        <span class="lever"></span> @Translate.Keys[item.Name] 
+                                                    </label>
+                                                </div>
+                                            }
+                                            <ValidationMessage For="@(() => UserVM.Roles)" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+                            <!-- Accordion wrapper -->
+                        </div>
+
+                    </div>
+
+                    <ValidationSummary style="display: none" />
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">@Translate.Keys["Save"]</button>
+                        <button type="button" class="btn btn-secondary" @onclick="@Close">@Translate.Keys["Close"]</button>
+                    </div>
+                </EditForm>
+
+            </div>         
+
+        </div>
+    </div>
+</div>
+
+
+

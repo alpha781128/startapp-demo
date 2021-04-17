@@ -1,0 +1,87 @@
+﻿
+@inherits DetailsBase
+@implements IDisposable
+
+<EditForm EditContext="@CustomerContext" OnValidSubmit="@UpdateCustomer">
+    <Blazored.FluentValidation.FluentValidationValidator />
+    <div class="form-row p-0">
+        <div class="col-md-6 m-0 mb-4 form-group p-1 card text-secondary">
+            <div class="mb-3">
+                <label for="AddressLine1"> @Translate.Keys["ResidencyAddress"]</label>
+                <InputText id="AddressLine1" type="text" @bind-Value="@Customer.AddressLine1" class="form-control" />
+                <ValidationMessage For="@(() => Customer.AddressLine1)" />
+            </div>
+            <div class="mb-3">
+                <label for="AdminArea1"> @Translate.Keys["State"]</label>
+                <InputText id="AdminArea1" type="text" @bind-Value="@Customer.AdminArea1" class="form-control" />
+                <ValidationMessage For="@(() => Customer.AdminArea1)" />
+            </div>
+            <div class="mb-3">
+                <label for="PostalCode"> @Translate.Keys["PostalCode"]</label>
+                <InputText id="PostalCode" type="text" @bind-Value="@Customer.PostalCode" class="form-control" />
+                <ValidationMessage For="@(() => Customer.PostalCode)" />
+            </div>
+            <div class="mb-3">
+                <label for="CountryCode"> @Translate.Keys["CountryCode"] ex: <strong class="pink-text">"US"</strong> </label>
+                <InputText id="CountryCode" type="text" @bind-Value="@Customer.CountryCode" class="form-control" />
+                <ValidationMessage For="@(() => Customer.CountryCode)" />
+            </div>
+        </div>
+        <div class="col-md-6 m-0 mb-4 form-group p-1 card text-secondary">
+            <div class="mb-3">
+                <label for="AddressLine2"> @Translate.Keys["DeliveryAddress"]</label>
+                <InputText id="AddressLine2" type="text" @bind-Value="@Customer.AddressLine2" class="form-control" />
+                <ValidationMessage For="@(() => Customer.AddressLine2)" />
+            </div>
+            <div class="mb-3">
+                <label for="AdminArea2"> @Translate.Keys["State2"]</label>
+                <InputText id="AdminArea2" type="text" @bind-Value="@Customer.AdminArea2" class="form-control" />
+                <ValidationMessage For="@(() => Customer.AdminArea2)" />
+            </div>
+            <div class="mb-3">
+                <label for="Mobile"> @Translate.Keys["Mobile"]</label>
+                <InputText id="Mobile" type="text" @bind-Value="@Customer.Mobile" class="form-control" />
+                <ValidationMessage For="@(() => Customer.Mobile)" />
+            </div>
+            <div class="mb-3">
+                <label for="WebSite"> @Translate.Keys["WebSite"]</label>
+                <InputText id="WebSite" type="text" @bind-Value="@Customer.WebSite" class="form-control" />
+                <ValidationMessage For="@(() => Customer.WebSite)" />
+            </div>
+        </div>
+    </div>
+
+    @*<div class="form-row">
+            <div class="col-md-6 mb-3 form-group">
+                <label for="BirthDate"> @Translate.Keys["BirthDate"]</label>
+                <InputDate id="BirthDate" @bind-Value="@Customer.BirthDate" placeholder="@Translate.Keys["BirthDate"]" class="form-control" />
+                <ValidationMessage For="@(() => Customer.BirthDate)" />
+            </div>
+            <div class="col-md-6 mb-3 form-group">
+                <label for="Gender"> @Translate.Keys["Gender"]</label>
+                <InputSelect id="Gender" type="text" @bind-Value="@Customer.Gender" placeholder="@Translate.Keys["Gender"]" class="browser-default custom-select">
+                    @foreach (var gender in Enum.GetValues(typeof(Gender)))
+                    {
+                        <option value="@gender">@gender</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => Customer.Gender)" />
+            </div>
+        </div>*@
+
+    <ValidationSummary style="display:none" />
+    <div class="d-flex">
+        <div class="mr-auto">
+        </div>
+        <div class="">
+            @if (!IsBusy)
+            {
+                <button type="submit" disabled="@(!FormValid)" class="btn blue-gradient btn-block btn-rounded z-depth-1a">@Translate.Keys["Save"]</button>
+            }
+            else
+            {
+                <button type="submit" disabled="@(!FormValid)" class="disabled btn blue-gradient btn-block btn-rounded z-depth-1a"><span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>@Translate.Keys["Saving"]</button>
+            }
+        </div>
+    </div>
+</EditForm>

@@ -1,0 +1,22 @@
+﻿
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete"></Confirm>
+
+
+@if (Pics.Count > 0)
+{
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var pic in Pics)
+        {
+
+<div class="col-md-3 col-lg-2 mr-md-2 mb-3 img-div card-md img-sm">
+    <img src="@pic.SSource" class="img-fluid img-max">
+    <button class="btn-sm m-0 btn-outline-pink p-0 px-1 del-img" @onclick="@(()=>Delete(pic.Id.ToString()))">
+        <i class="fas fa-times pink-text my-0"></i>
+    </button>
+
+</div>}
+    </div>
+</div>}
+
+

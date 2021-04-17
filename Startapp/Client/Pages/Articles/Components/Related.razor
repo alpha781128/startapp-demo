@@ -1,0 +1,101 @@
+﻿<!-- Section random products -->
+
+@if (Articles.Count > 0)
+{
+    <div class="divider-new mt-2">
+        <h3 class="h3-responsive font-weight-bold blue-text mx-3">@Translate.Keys["Related"]</h3>
+    </div>
+}
+
+
+<section>
+    @if (Loading)
+    {
+        <Spinner></Spinner>
+    }
+    else
+    {
+        <div class="row">
+
+            @if (Articles.Count > 0)
+            {
+@foreach (var article in Articles)
+{
+    <div class="col-lg-3 col-md-6 mb-4">
+        <!-- Card -->
+        <div class="card card-ecommerce">
+            <!-- Card image -->
+            <div class="view overlay">
+                <a href="@($"/articledetails/{article.Id}")">
+                    <img src="@(Picture(article.Pictures.FirstOrDefault()))" class="img-fluid" alt="">
+                </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body">
+                <!-- Category & Title -->
+                <h5 class="card-title mb-1">
+                    <strong>
+                        <a href="" class="dark-grey-text">@article.Title</a>
+                    </strong>
+                </h5>
+                <span class="badge badge-danger mb-2">bestseller</span>
+                <!-- Rating -->
+                <ul class="rating">
+                    <li>
+                        <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star blue-text"></i>
+                    </li>
+                </ul>
+                <!-- Card footer -->
+                <div class="card-footer pb-0">
+                    <div class="row mb-0">
+                        <span class="red-text">
+                            <strong>$ @string.Format("{0:# ### ###.00}", article.SellingPrice)</strong>
+                        </span>
+                        <span class="grey-text">
+                            <small>
+                                @if (article.OldPrice > 0)
+                                {
+                                    <s>$ @string.Format("{0:# ### ###.00}", article.OldPrice)</s>
+                                }
+                            </small>
+                        </span>
+                        <span class="float-right">
+                            <a onclick="addToCart(@article.Id)" class="" data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                                <i class="fas fa-shopping-cart ml-3"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card content -->
+        </div>
+        <!-- Card -->
+    </div>}
+            }
+        </div>}
+</section>
+
+<!-- Section random products -->
+
+
+@if (Articles.Count > 0)
+{
+    <div class="row">
+        <div class="col">
+            <Pagination MetaData="MetaData" Spread="2" SelectedPage="SelectedPage"/>
+        </div>
+    </div>
+}

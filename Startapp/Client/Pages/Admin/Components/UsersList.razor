@@ -1,0 +1,42 @@
+﻿
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete"></Confirm>
+
+@if (Users.Count > 0)
+{
+@foreach (var user in Users)
+{
+<div class="d-flex col-example">
+    <div style="width: 80px !important">
+        <img src="@(Picture(user.Photo))" class="avatar rounded-circle z-depth-1-half m-1 mt-2" style="width: 70px !important" alt="Photo" />
+    </div>
+
+    <div class="w-100 mx-2">
+        <p class="mb-1"><small>@Translate.Keys["UserName"]:<em> @user.UserName</em></small></p>
+        <p class="mb-1"><small>@Translate.Keys["FullName"]:<em> @user.FullName</em></small></p>
+        <p class="mb-1 blue-text h6"><small>@Translate.Keys["Email"]:<em> @user.Email</em></small></p>
+    </div>
+    <div class="flex-shrink-1" style="width: 44px !important">
+        <AuthorizeView Policy="@Policies.ManageAllUsersPolicy">
+            <a data-toggle="tooltip" data-placement="top" title="update ..." class="btn-floating m-0 mt-1 mr-1 btn-sm aqua-gradient" @onclick="@(()=>Update(user))"><i class="fas fa-pencil-alt"></i></a>
+            <a data-toggle="tooltip" data-placement="top" title="delete ..." class="btn-floating m-0 mt-1 mr-1 btn-sm peach-gradient" @onclick="@(()=>Delete(user))"><i class="far fa-trash-alt"></i></a>
+        </AuthorizeView>
+    </div>
+</div>
+                    <hr />
+                    } }
+
+else
+{
+
+<div class="container text-center my-3">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
+            <h3 class="font-weight-bold text-white peach-gradient py-3">
+                <strong> @Message </strong> <i class="far fa-sad-cry"></i>
+            </h3>
+        </div>
+    </div>
+</div>}
+
+
+

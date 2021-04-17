@@ -1,0 +1,166 @@
+﻿AppTitle: Startapp
+Home: Home
+Articles: Articles
+Article: Article
+Data: Data
+Contact: Contact
+SignIn: Sign in
+SignOut: Sign out
+SignUp: Sign up
+LogIn: Log in
+LogOut: Log out
+Register: Register
+Settings: Settings
+Profile: Profile
+Add: Add
+Update: Update
+Delete: Delete
+Added: Added
+Updated: Updated 
+Deleted: Deleted
+LoadSuccess: Loaded successfully
+AddSuccess: Added successfully
+UpdateSuccess: Updated successfully
+DeleteSuccess: Deleted successfully
+Successfully: Successfully 
+FailedToload: Failed to load
+FailedToAdd: Failed to add
+FailedToDelete: Failed to delete
+FailedToUpdate: Failed to update
+Search: Search
+Save: Save
+Saving: Saving...
+Cancel: Cancel
+Close: Close
+Confirm: Confirm
+Previous: Previous
+Next: Next
+Title: Title
+Name: Name
+Description: Description
+Price: Price
+BuyingPrice: Buying price
+SellingPrice: Selling price
+OldPrice: Old price
+Negotiable: Negotiable
+UnitsInStock: Units in stock
+Duration: Duration
+Customer: Customer
+Category: Category
+ArticleCategory: Article category
+Order: Order
+OrderItems: Order items
+Photo: Photo
+Picture: Picture
+Pictures: Pictures
+Permission: Permission
+Language: Language
+Conversation: Conversation
+Message: Message
+Configuration: Configuration
+Introduction: Introduction
+ContactUs: Contact us
+About: About
+MinimizeMenu: Minimize menu
+ProfileDetails: Profile details
+Reset: Reset
+AreYouSureToDel: Are you sure you want to delete
+ConfirmDelete: Confirm delete
+Loading: Loading...
+ErrorLoading: Error loading
+SorryNo: Sorry no
+Found: found
+User: User
+user: User
+Users: Users
+Role: Role
+Roles: Roles
+Admin: Admin
+Administrator: Administrator
+administrator: Administrator
+users.view: View users
+users.manage: Manage users
+roles.view: View roles
+roles.manage: Manage roles
+roles.assign: Assign roles
+UserName: User name
+FirstName: First name
+LastName: Last name
+FullName: Full name
+Email: E-mail
+JobTitle: Job title
+PhoneNumber: Phone number
+Password: Password
+RememberMe: Remember me
+IfMember: If member
+NotAMember: Not a member
+OrSignInWith: Or sign in with
+AddPicture: Add picture
+ArticleTitle: Article title
+UserTitle: User title
+ArticleDescription: Article description
+ArticleDetails: Article details
+TopViewed: Top viewed
+TopSelled: Top selled
+NewlyAdded: Newly added
+Related: Related
+RelatedCategory: Related category
+Random: Random
+UserPermissions: User permissions
+RolePermissions: Role permissions
+Enabled : Enabled
+MyDashboard: My dashboard
+MyArticles: My articles
+Cart: Cart
+ShowDashboardStatistics: Show dashboard statistics
+ShowDashboardNotifications: Show dashboard notifications
+ShowDashboardBanner: Show dashboard banner
+ChangePassword: Change password
+ForgotPassword: Forgot password
+CurrentPassword: Current password
+NewPassword: New password
+ConfirmPassword: Confirm password
+Mobile: Mobile
+Address: Address
+City: City
+WebSite: Web site
+BirthDate: Birth date
+Gender: Gender
+MoreInfos: More infos
+AuthorizingUser: Please wait while the system complete authorizing user.
+NotAuthorizedUser: Sorry but you are not authorized to access this page.
+NotAuthenticatedUser: Sorry but you are not authenticated yet.
+ConfirmEmail: Email confirmation
+SuccessEmailConfirmation: Your e-mail has been confirmed successfully
+FailEmailConfirmation: Faillure occur during confirmation, Please try again
+Recover: Recover
+UsernameOrEmail: Username or email
+RecoverPassword: Recover password
+ResetPassword: Reset password
+EmailConfirmation: Please check your email to confirm subscription on our application
+CheckYourEmail: Please check your email to reset your password
+UNotFoundOrMNotConfirmed: Don't reveal that the user does not exist or is not confirmed
+SuccessPasswordUpdate: Your password updated successfully
+General: General
+Details: Details
+AddToCart: Add to cart
+Quantity: Quantity
+Amount: Amount
+Total: Total
+Discount: Discount
+Shipping: Shipping
+Handling: Handling
+Tax: Tax
+ShippingDiscount: Shipping discount
+CompletePurchase: Complete purchase
+ResidencyAddress: Residency address
+DeliveryAddress: Delivery address
+State: Residency state
+State2: Delivery state
+PostalCode: Postal code
+CountryCode: Country code
+SorryNoItemInYourCart: Sorry no item in your shopping cart
+AllsFieldsRequired: Alls fields Required 
+OptionalFields: Optional fields
+ClientInfos: Client infos
+YourInfoMustBeUpdated: Your informations must be updated

@@ -1,0 +1,94 @@
+﻿@inherits LoginDialogBase
+@implements IDisposable
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-md" role="document">
+        <!--Content-->
+        <div class="modal-content form-elegant">
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 dark-grey-text font-weight-bold my-0" id="myModalLabel">
+                    <strong>@Translate.Keys["SignIn"]</strong>
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(()=>CloseLoginModal(true))">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mx-2">
+                <!--Body-->
+                <EditForm autocomplete="off" EditContext="@EditContext" OnValidSubmit="@LoginUser">
+                    <Blazored.FluentValidation.FluentValidationValidator />
+                    <div id="LoginAlert"></div>
+
+                    <div class="md-form mt-2">
+                        <LaInputText type="text" id="UserName" @bind-Value="User.UserName" class="form-control" />
+                        <label for="UserName">@Translate.Keys["UserName"]</label>
+                        <ValidationMessage For="@(() => User.UserName)" />
+                    </div>
+
+                    <div class="md-form pt-2">
+                        <LaInputText type="password" id="Password" @bind-Value="User.Password" class="form-control" />
+                        <label for="Password">@Translate.Keys["Password"]</label>
+                        <ValidationMessage For="@(() => User.Password)" />
+                        <p class="font-small pb-0 mb-1 blue-text d-flex justify-content-end">
+                            <a @onclick="(()=>GoToRecover())" class="blue-text ml-1">
+                                @Translate.Keys["ForgotPassword"]?
+                            </a>
+                        </p>
+                    </div>
+                    @*<div class="form-check py-0 my-0">
+        <InputCheckbox Id="RememberMe" @bind-Value="user.RememberMe" type="checkbox" class="form-check-input" />
+        <label class="font-small blue-text" data-error="wrong" data-success="right" for="RememberMe">Remember Me?</label>
+        <ValidationMessage For="@(() => user.RememberMe)" />
+        </div>*@
+
+                    <div class="form-check pt-0 pb-3 my-0 pl-0">
+                        <InputCheckbox Id="RememberMe" @bind-Value="User.RememberMe" class="form-check-input" type="checkbox" />
+                        <label class="form-check-label" for="RememberMe">@Translate.Keys["RememberMe"]?</label>
+                    </div>
+                    <ValidationSummary style="display:none" />
+
+                    <div class="row">
+                        <div class="text-center col mx-0 px-0 mr-2 mb-1">
+                            @if (!IsBusy)
+                            {
+                                <button type="submit" disabled="@(!FormValid)" class="btn blue-gradient btn-block btn-rounded z-depth-1a">@Translate.Keys["SignIn"]</button>
+                            }
+                            else
+                            {
+                                <button type="submit" disabled="@(!FormValid)" class="disabled btn blue-gradient btn-block btn-rounded z-depth-1a"><span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>@Translate.Keys["SignIn"]...</button>
+                            }
+                        </div>
+                        <div class="text-center col mx-0 px-0 mb-1">
+                            <button type="button" disabled="@(IsBusy)" class="btn bg-warning btn-block btn-rounded z-depth-1a" data-dismiss="modal" @onclick="(()=>CloseLoginModal(true))">@Translate.Keys["Cancel"]</button>
+                        </div>
+                    </div>
+                </EditForm>
+
+                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-1 pt-1">
+                    @Translate.Keys["OrSignInWith"]: 
+                </p>
+
+                <div class="row my-1 d-flex justify-content-center">
+                    <!--Facebook-->
+                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f"></i></button>
+                    <!--Twitter-->
+                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-linkedin"></i></button>
+                    <!--Google +-->
+                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+                </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer mx-5 pt-1 mb-1">
+                <p class="font-small grey-text d-flex justify-content-end">
+                    @Translate.Keys["NotAMember"]? <a class="blue-text ml-1" href="" @onclick="(()=>GoToRegister())"> @Translate.Keys["SignUp"]</a>
+                </p>
+            </div>
+
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- Modal -->

@@ -1,0 +1,45 @@
+﻿
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete"></Confirm>
+
+@if (Articles.Count > 0)
+{
+@foreach (var article in Articles)
+{
+<div class="d-flex p-1 col-example">
+    <div class="w-25">
+        <a href="@($"/articledetails/{article.Id}")">
+            <img src="@(Picture(article.Pictures.FirstOrDefault()))" alt="product image" style="width:100px;" />
+        </a>
+    </div>
+
+    <div class="w-100">
+        <h3> @article.Title</h3>
+        <p>
+            @article.Description
+        </p>
+        <div class="text-right align-middle mr-5">
+            @string.Format("{0:# ### ###.00}", article.BuyingPrice)
+        </div>
+    </div>
+    <div class="flex-shrink-1 w-25" style="max-width: 132px !important">
+        <a data-toggle="tooltip" data-placement="top" title="view ..." class="btn-floating m-0 mt-1 mr-1 btn-sm #00e5ff cyan accent-3" href="@($"/articledetails/{article.Id}")"><i class="fas fa-info"></i></a>
+        <a data-toggle="tooltip" data-placement="top" title="update ..." class="btn-floating m-0 mt-1 mr-1 btn-sm aqua-gradient" @onclick="@(()=>Update(article))"><i class="fas fa-pencil-alt"></i></a>
+        <a data-toggle="tooltip" data-placement="top" title="delete ..." class="btn-floating m-0 mt-1 mr-1 btn-sm peach-gradient" @onclick="@(()=>Delete(article))"><i class="far fa-trash-alt"></i></a>
+    </div>
+</div>} }
+
+else
+{
+
+<div class="container text-center my-3">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
+            <h3 class="font-weight-bold text-white peach-gradient py-3">
+                <strong> @Message </strong> <i class="far fa-sad-cry"></i>
+            </h3>
+        </div>
+    </div>
+</div>}
+
+
+

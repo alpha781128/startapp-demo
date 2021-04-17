@@ -1,0 +1,161 @@
+AppTitle: Boutique
+Home: Accueil
+Counter: Counter
+Articles: Articles
+Article: Article
+Data: Données
+Contact: Contact
+SinIn: Connexion
+SignOut: Déconnexion
+SignUp: s'enregistrer
+LogIn: Connectez-vous
+LogOut: Déconnexion
+Register: S'inscrire
+Settings: Paramètres
+Profile: Profil
+Add: Ajouter
+Update: Mettre à jour
+Delete: Supprimer
+Added: Ajouté
+Updated: Actualisé
+Deleted: Supprimé
+Successfully: Réussi
+FailedToload: Échec au moment du chargement
+FailedToAdd: N’a pas ajouté
+FailedToDelete: Échec de la suppression
+FailedToUpdate: Échec de la mise à jour
+Search: Rechercher
+Save: Enregistrer
+Saving: Enregistrer
+Cancel: Annuler
+Close: Fermer
+Confirm: Confirmer
+Previous: Précédent
+Next: Suivant
+Title: Titre
+Description: Description
+Price: Prix
+BuyingPrice: Prix d’achat
+SellingPrice: Prix de vente
+OldPrice: Ancien prix
+Negotiable: Négociable
+UnitsInStock: Unités en stock
+Duration: Durée
+Customer: Client
+Category: Catégorie
+ArticleCategory: Catégorie d’article
+Order: Commande
+OrderItems: Objets de la Commande
+Photo: Photo
+Picture: image
+Permission: Permission
+Language: Langue
+Conversation: Conversation
+Message: Message
+Configuration: Configuration
+Introduction: Introduction
+ContactUs: Contactez-nous
+About: About
+MinimizeMenu: Minimiser menu
+ProfileDetails: Détails du profil
+Reset: Réinitialiser
+AreYouSureToDel: Êtes-vous sûr de vouloir supprimer
+ConfirmDelete: Confirmer la suppression
+Loading: Chargement...
+ErrorLoading: Chargement des erreurs
+SorryNo: Désolé non
+Found: Trouvé
+User: Utilisateur
+user: Utilisateur
+Users: Utilisateurs
+Role: Rôle
+Roles: Rôles
+Admin: Admin
+Administrator: Administrateur
+administrator: Administrateur
+users.view: Afficher les utilisateurs
+users.manage: Gérer les utilisateurs
+roles.view: Afficher les rôles
+roles.manage: Gérer les rôles
+roles.assign: Attribuer des rôles
+UserName: Nom de l’utilisateur
+FirstName: Prénom
+LastName: Nom de famille
+FullName: Nom complet
+Email: Courrier électronique
+JobTitle: Titre de l’emploi
+PhoneNumber: Numéro de téléphone
+Password: mot de passe
+ConfirmPassword: Confirmer le mot de passe
+RememberMe: souvenez-vous de moi
+IfMember: Si le membre
+NoAMember: Pas un membre
+OrSignInWith: Ou connectez-vous avec
+AddPicture: Ajouter l’image
+ArticleTitle: Titre de l’article
+UserTitle: Titre de l’utilisateur
+ArticleDescription: Description de l’article
+ArticleDetails: Détails de l’article
+TopViewed: Haut de la liste
+TopSelled: Top vendu
+NewlyAdded: Nouvellement ajouté
+Related: Liés
+RelatedCategory: Catégorie connexe
+Random: Aléatoire
+UserPermissions: Autorisations d’utilisation
+RolePermissions: Autorisations de rôle
+Enabled: Activé
+MyDashboard: Mon tableau de bord
+MyArticles: Mes articles
+Cart: Panier
+ShowDashboardStatistics: Afficher les statistiques du tableau de bord
+ShowDashboardNotifications: Afficher les notifications de tableau de bord
+ShowDashboardBanner: Afficher la bannière du tableau de bord
+ChangePassword: Changer de mot de passe
+ForgotPassword: Mot de passe oublié
+CurrentPassword: Mot de passe actuel
+NewPassword: Nouveau mot de passe
+Mobile: Mobile
+Address: Adresse
+City: Ville
+WebSite: Site Web
+BirthDate: Date de naissance
+Gender: Sexe
+MoreInfos: Plus d’infos
+AuthorizingUser: S’il vous plaît attendre pendant que le système complète autoriser l’utilisateur.
+NotAuthorizedUser: Désolé, mais vous n’êtes pas autorisé à accéder à cette page.
+NotAuthenticatedUser: Désolé, mais vous n’êtes pas encore authentifié.
+ConfirmEmail: Confirmation par courriel
+SuccessEmailConfirmation: Votre e-mail a été confirmé avec succès
+FailEmailConfirmation: Faillure se produire lors de la confirmation, S’il vous plaît essayer à nouveau
+Recover: Récupérer
+UsernameOrEmail: Nom d’utilisateur ou e-mail
+RecoverPassword: Récupérer le mot de passe
+ResetPassword: Réinitialiser le mot de passe
+EmailConfirmation: S’il vous plaît vérifier votre e-mail pour confirmer l’abonnement sur notre application
+CheckYourEmail: S’il vous plaît vérifier votre e-mail pour réinitialiser votre mot de passe
+UNotFoundOrMNotConfirmed: Ne révélez pas que l’utilisateur n’existe pas ou n’est pas confirmé
+SuccessPasswordUpdate: Votre mot de passe mis à jour avec succès
+General: Généralités
+Details: Détails
+AddToCart: Ajouter au panier
+Quantity: Quantité
+Amount: Montant
+Total: Total
+Discount: Réduction
+Shipping: livraison
+Handling: Manipulation
+Tax: Taxe
+ShippingDiscount: Rabais d’expédition
+CompletePurchase: Achat complet
+ResidencyAddress: Adresse de résidence
+DeliveryAddress: Adresse de livraison
+State: État de résidence
+State2: État de livraison
+PostalCode: Code postal
+CountryCode: Code pays
+SorryNoItemInYourCart: Désolé aucun article dans votre panier
+AllsFieldsRequired: Tous les champs requis
+OptionalFields: Champs optionnels
+ClientInfos: Infos clients
+YourInfoMustBeUpdated: Vos informations doivent être mises à jour

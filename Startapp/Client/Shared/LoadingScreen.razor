@@ -1,0 +1,23 @@
+﻿@if (isLoaded)
+{
+    @ChildContent
+}
+else
+{
+    <div w3-include-html="animation.html"></div>    
+}
+
+@code {
+
+    bool isLoaded;
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1000); // TODO actual initialization job
+        isLoaded = true;
+    }
+
+}

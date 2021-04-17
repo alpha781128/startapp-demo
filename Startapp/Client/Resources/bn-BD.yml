@@ -1,0 +1,166 @@
+AppTitle: স্টার্টঅ্যাপ
+Home: মূল
+Articles: নিবন্ধ
+Article: প্রবন্ধ
+Data: ডাটা
+Contact: যোগাযোগ
+SignIn: সাইন ইন করো
+SignOut: সাইন আউট করুন
+SignUp: সাইন আপ করো
+LogIn: লগ ইন করো
+LogOut: লগ আউট করুন
+Register: নিবন্ধন
+Settings: সেটিংস
+Profile: প্রোফাইল
+Add: যুক্ত
+Update: আধুনিকীকরণ
+Delete: বিলোপ
+Added: যুক্ত
+Updated: আধুনিকীকৃত
+Deleted: বিলোপ
+LoadSuccess: সফলভাবে লোড করা হয়েছে
+AddSuccess: সফলভাবে যোগ করা হয়েছে
+UpdateSuccess: সফলভাবে হালনাগাদ করা হয়েছে
+DeleteSuccess: সফলভাবে মুছে ফেলা হয়েছে
+Successfully: সফলভাবে
+FailedToload: লোড করতে ব্যর্থ
+FailedToAdd: যোগ করতে ব্যর্থ
+FailedToDelete: মুছে ফেলতে ব্যর্থ
+FailedToUpdate: হালনাগাদ করতে ব্যর্থ
+Search: সন্ধান
+Save: সংরক্ষণ
+Saving: সংরক্ষণ।।।
+Cancel: বাতিল
+Close: বন্ধ
+Confirm: নিশ্চিত
+Previous: পূর্ববর্তী
+Next: পরবর্তী
+Title: শীর্ষক
+Name: নাম
+Description: বর্ণনা
+Price: দাম
+BuyingPrice: ক্রয় মূল্য
+SellingPrice: বিক্রয় মূল্য
+OldPrice: পুরাতন মূল্য
+Negotiable: সমঝোতা
+UnitsInStock: স্টক ের ইউনিট
+Duration: স্থিতিকাল
+Customer: ক্রেতা
+Category: বিষয়শ্রেণী
+ArticleCategory: নিবন্ধ বিভাগ
+Order: ক্রম
+OrderItems: বিষয়োপকরণসমূহ অর্ডার করুন
+Photo: ফটো
+Picture: চিত্র
+Pictures: চিত্র
+Permission: অনুমতি
+Language: ভাষা
+Conversation: বার্তালাপ
+Message: বার্তা
+Configuration: কনফিগারেশন
+Introduction: ভূমিকা
+ContactUs: আমাদের সাথে যোগাযোগ করুন
+About: সম্বন্ধে
+MinimizeMenu: মেনু ন্যূনতম করুন
+ProfileDetails: প্রোফাইল ের বিস্তারিত
+Reset: রিসেট
+AreYouSureToDel: আপনি কি নিশ্চিত যে আপনি মুছে ফেলতে চান
+ConfirmDelete: মুছে ফেলা নিশ্চিত করুন
+Loading: লোড।।।
+ErrorLoading: লোড করতে ত্রুটি
+SorryNo: দুঃখিত না
+Found: পাওয়া
+User: ব্যবহারকারী
+user: ব্যবহারকারী
+Users: ব্যবহারকারী
+Role: ভূমিকা
+Roles: ভূমিকা
+Admin: প্রশাসক
+Administrator: প্রশাসক
+administrator: প্রশাসক
+users.view: ব্যবহারকারীদের প্রদর্শন করুন
+users.manage: ব্যবহারকারীপরিচালনা করুন
+roles.view: ভূমিকা প্রদর্শন করুন
+roles.manage: ভূমিকা পরিচালনা করুন
+roles.assign: ভূমিকা বরাদ্দ করুন
+UserName: ব্যবহারকারীর নাম
+FirstName: প্রথম নাম
+LastName: শেষ নাম
+FullName: পুরো নাম
+Email: ইমেইল
+JobTitle: চাকরির শিরোনাম
+PhoneNumber: ফোন নম্বর
+Password: পাসওয়ার্ড
+RememberMe: আমাকে মনে রেখো
+IfMember: যদি সদস্য হন
+NotAMember: কোন সদস্য নয়
+OrSignInWith: অথবা সাইন ইন করুন
+AddPicture: ছবি যোগ করুন
+ArticleTitle: নিবন্ধের শিরোনাম
+UserTitle: ব্যবহারকারীর শিরোনাম
+ArticleDescription: নিবন্ধের বর্ণনা
+ArticleDetails: নিবন্ধের বিস্তারিত
+TopViewed: সর্বোচ্চ প্রদর্শিত
+TopSelled: সর্বোচ্চ বিক্রি
+NewlyAdded: নতুন যোগ করা হয়েছে
+Related: সম্পর্কিত
+RelatedCategory: সংশ্লিষ্ট বিভাগ
+Random: এলোমেলো
+UserPermissions: ব্যবহারকারীর অনুমতি
+RolePermissions: ভূমিকার অনুমতি
+Enabled: সক্ষম
+MyDashboard: আমার ড্যাশবোর্ড
+MyArticles: আমার প্রবন্ধ
+Cart: গাড়ি
+ShowDashboardStatistics: ড্যাশবোর্ডের পরিসংখ্যান দেখান
+ShowDashboardNotifications: ড্যাশবোর্ড বিজ্ঞপ্তি দেখান
+ShowDashboardBanner: ড্যাশবোর্ড ব্যানার দেখান
+ChangePassword: গুপ্ত-সংকেত পরিবর্তন করুন
+ForgotPassword: পাসওয়ার্ড ভুলে গেছে
+CurrentPassword: বর্তমান গুপ্ত-সংকেত
+NewPassword: নতুন গুপ্ত-সংকেত
+ConfirmPassword: গুপ্ত-সংকেত নিশ্চিত করুন
+Mobile: মোবাইল
+Address: ঠিকানা
+City: শহর
+WebSite: ওয়েব সাইট
+BirthDate: জন্ম তারিখ
+Gender: লিঙ্গ
+MoreInfos: আরও তথ্য
+AuthorizingUser: অনুগ্রহ করে অপেক্ষা করুন যখন সিস্টেমটি ব্যবহারকারীর অনুমোদন সম্পূর্ণ হবে।
+NotAuthorizedUser: দুঃখিত কিন্তু আপনি এই পৃষ্ঠায় প্রবেশ করার অনুমতি নেই.
+NotAuthenticatedUser: দুঃখিত কিন্তু আপনি এখনো অনুমোদন করেননি।
+ConfirmEmail: ইমেইল নিশ্চিতকরণ
+SuccessEmailConfirmation: আপনার ই-মেইল সফলভাবে নিশ্চিত করা হয়েছে
+FailEmailConfirmation: নিশ্চিতকরণের সময় ব্যর্থতা সংঘটিত হয়, অনুগ্রহ করে আবার চেষ্টা করুন
+Recover: পুনরুদ্ধার
+UsernameOrEmail: ব্যবহারকারীর নাম বা ইমেইল
+RecoverPassword: পাসওয়ার্ড পুনরুদ্ধার করুন
+ResetPassword: পাসওয়ার্ড রিসেট করুন
+EmailConfirmation: আমাদের অ্যাপ্লিকেশনে সদস্যতা নিশ্চিত করতে অনুগ্রহ করে আপনার ইমেইল পরীক্ষা করুন
+CheckYourEmail: অনুগ্রহ করে আপনার পাসওয়ার্ড রিসেট করতে আপনার ইমেইল পরীক্ষা করুন
+UNotFoundOrMNotConfirmed: প্রকাশ করবেন না যে ব্যবহারকারীর অস্তিত্ব নেই অথবা নিশ্চিত নয়
+SuccessPasswordUpdate: আপনার গুপ্ত-সংকেত সফলভাবে হালনাগাদ করা হয়েছে
+General: সাধারণ
+Details: বিস্তারিত
+AddToCart: গাড়িতে যোগ করুন
+Quantity: পরিমাণ
+Amount: পরিমান
+Total: মোট
+Discount: ডিসকাউন্ট
+Shipping: শিপিং
+Handling: পরিচালনা করা হচ্ছে
+Tax: ট্যাক্স
+ShippingDiscount: শিপিং ডিসকাউন্ট
+CompletePurchase: সম্পূর্ণ ক্রয়
+ResidencyAddress: রেসিডেন্সি ঠিকানা
+DeliveryAddress: ডেলিভারি ঠিকানা
+State: রেসিডেন্সি অবস্থা
+State2: ডেলিভারি অবস্থা
+PostalCode: পোস্টাল কোড
+CountryCode: কান্ট্রি কোড
+SorryNoItemInYourCart: দুঃখিত আপনার শপিং কার্টে কোন আইটেম নেই
+AllsFieldsRequired: সব ক্ষেত্র আবশ্যক
+OptionalFields: ঐচ্ছিক ক্ষেত্র
+ClientInfos: ক্লায়েন্ট তথ্য
+YourInfoMustBeUpdated: আপনার তথ্য হালনাগাদ করা আবশ্যক

@@ -1,0 +1,120 @@
+﻿@inherits AddRoleDialogBase
+
+<div class="modal fade" id="roleModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" 
+     aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="articleModalLabel">@DialogTitle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <EditForm Model="@Role" OnValidSubmit="@HandleValidSubmit">
+                    <Blazored.FluentValidation.FluentValidationValidator />
+                    <div class="form-row">
+                        <input id="Id" hidden value="@Role.Id" />
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Name">@Translate.Keys["Name"]: </label>
+                                <InputText id="Name" class="form-control" @bind-Value="@Role.Name" placeholder="@Translate.Keys["Name"]"></InputText>
+                                <ValidationMessage For="@(() => Role.Name)" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Description">@Translate.Keys["Description"]: </label>
+                                <InputText id="Description" class="form-control" @bind-Value="@Role.Description" placeholder="@Translate.Keys["Description"]"></InputText>
+                                <ValidationMessage For="@(() => Role.Description)" />
+                            </div>
+                        </div>
+                       
+                    </div>
+                 
+                    <div class="form-row">
+                        <div class="col-12">
+
+                            <!--Accordion wrapper-->
+                            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card">
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingOne1">
+                                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+                                           aria-controls="collapseOne1">
+                                            <h5 class="mb-0">
+                                                @Translate.Keys["UserPermissions"] <i class="fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                                        <div class="card-body">
+                                            <InputSelect hidden id="Permissions" @bind-Value="@Role.Permissions"></InputSelect>
+                                            @foreach (var item in PermissionVMs)
+                                            {
+                                                if (item.GroupName == "User Permissions")
+                                                {
+                                                    <div class="switch" style="display:inline-block !important">
+                                                        <label>
+                                                            <input Id="@item.Name" type="checkbox" checked="@item.Checked" @onchange="(e=>CheckboxClicked(e, item.Name))" />
+                                                            <span class="lever"></span> @Translate.Keys[item.Value] 
+                                                        </label>
+                                                    </div>
+                                                }
+                                            }
+                                            <ValidationMessage For="@(() => Role.Permissions)" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion card -->
+                                <div class="card">
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingOne2">
+                                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne2" aria-expanded="false"
+                                           aria-controls="collapseOne1">
+                                            <h5 class="mb-0">
+                                                @Translate.Keys["RolePermissions"] <i class="fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2" data-parent="#accordionEx">
+                                        <div class="card-body">
+                                            @foreach (var item in PermissionVMs)
+                                            {
+                                                if (item.GroupName == "Role Permissions")
+                                                {
+                                                    <div class="switch" style="display:inline-block !important">
+                                                        <label>
+                                                            <input Id="@item.Name" type="checkbox" checked="@item.Checked" @onchange="(e=>CheckboxClicked(e, item.Name))" />
+                                                            <span class="lever"></span> @Translate.Keys[item.Value]
+                                                        </label>
+                                                    </div>
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion wrapper -->
+                        </div>
+
+                    </div>
+
+                    <ValidationSummary style="display: none" />
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">@Translate.Keys["Save"]</button>
+                        <button type="button" class="btn btn-secondary" @onclick="@Close">@Translate.Keys["Close"]</button>
+                    </div>
+                </EditForm>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,39 @@
+﻿@inherits ModalDialogBase
+<!-- Modal -->
+
+@if (ShowModal)
+{
+    <div class="modal fade show d-block" id="modalDialog" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-notify @ModalParams.Type" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading lead">@ModalParams.Title</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="() => OnClose()">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="@ModalParams.Icon fa-4x animated rotateIn mb-3"></i>
+                        <p>
+                            @ModalParams.Message
+                        </p>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" @onclick="() => OnClose()" class="btn waves-effect @ModalParams.Button" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+}
+<!-- Central Modal Medium Success-->

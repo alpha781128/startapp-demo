@@ -1,0 +1,166 @@
+AppTitle: 스타트 앱
+Home: 홈
+Articles: 기사
+Article: 기술
+Data: 데이터
+Contact: 연락처
+SignIn: 서명하세요
+SignOut: 로그인
+SignUp: 등록하세요
+LogIn: 로그인
+LogOut: 로그아웃
+Register: 등록
+Settings: 설정
+Profile: 프로필
+Add: 추가
+Update: 업데이트
+Delete: 삭제
+Added: 추가
+Updated: 업데이트
+Deleted: 삭제
+LoadSuccess: 성공적으로 로드됨
+AddSuccess: 성공적으로 추가
+UpdateSuccess: 성공적으로 업데이트
+DeleteSuccess: 성공적으로 삭제됨
+Successfully: 성공적 으로
+FailedToload: 로드실패
+FailedToAdd: 추가 실패
+FailedToDelete: 삭제 실패
+FailedToUpdate: 업데이트 실패
+Search: 검색
+Save: 저장
+Saving: 저장...
+Cancel: 취소
+Close: 가까이
+Confirm: 확인
+Previous: 이전
+Next: 다음
+Title: 제목
+Name: 이름
+Description: 설명
+Price: 가격
+BuyingPrice: 구매 가격
+SellingPrice: 판매 가격
+OldPrice: 이전 가격
+Negotiable: 협상
+UnitsInStock: 재고 단위
+Duration: 기간
+Customer: 고객
+Category: 범주
+ArticleCategory: 기사 카테고리
+Order: 순서
+OrderItems: 주문 항목
+Photo: 사진
+Picture: 그림
+Pictures: 사진
+Permission: 권한
+Language: 언어
+Conversation: 대화
+Message: 메시지
+Configuration: 구성
+Introduction: 소개
+ContactUs: 문의
+About: 에 대해
+MinimizeMenu: 메뉴 최소화
+ProfileDetails: 프로필 세부 정보
+Reset: 재설정
+AreYouSureToDel: 삭제하시겠습니까?
+ConfirmDelete: 삭제 확인
+Loading: 로드...
+ErrorLoading: 오류 로드
+SorryNo: 죄송합니다.
+Found: 발견
+User: 사용자
+user: 사용자
+Users: 사용자
+Role: 역할
+Roles: 역할
+Admin: 관리자
+Administrator: 관리자
+administrator: 관리자
+users.view: 사용자 보기
+users.manage: 사용자 관리
+roles.view: 역할 보기
+roles.manage: 역할 관리
+roles.assign: 역할 할당
+UserName: 사용자 이름
+FirstName: 이름
+LastName: 성
+FullName: 전체 이름
+Email: 전자 메일
+JobTitle: 작업 제목
+PhoneNumber: 전화 번호
+Password: 암호
+RememberMe: 나를 기억해
+IfMember: 회원인 경우
+NotAMember: 회원이 아닙니다.
+OrSignInWith: 또는 로그인
+AddPicture: 그림 추가
+ArticleTitle: 기사 제목
+UserTitle: 사용자 제목
+ArticleDescription: 기사 설명
+ArticleDetails: 기사 세부 정보
+TopViewed: 최고 조회수
+TopSelled: 최고 판매
+NewlyAdded: 새로 추가
+Related: 관련
+RelatedCategory: 관련 범주
+Random: 임의의
+UserPermissions: 사용자 권한
+RolePermissions: 역할 권한
+Enabled: 사용
+MyDashboard: 대시보드
+MyArticles: 내 기사
+Cart: 카트
+ShowDashboardStatistics: 대시보드 통계 표시
+ShowDashboardNotifications: 대시보드 알림 표시
+ShowDashboardBanner: 대시보드 배너 표시
+ChangePassword: 암호 변경
+ForgotPassword: 암호를 잊어 버렸습니다.
+CurrentPassword: 현재 암호
+NewPassword: 새 암호
+ConfirmPassword: 암호 확인
+Mobile: 모바일
+Address: 주소
+City: 도시
+WebSite: 웹 사이트
+BirthDate: 생년월일
+Gender: 성별
+MoreInfos: 더 많은 정보
+AuthorizingUser: 시스템이 사용자를 승인하는 동안 기다려 주십시오.
+NotAuthorizedUser: 죄송합니다만 이 페이지에 액세스할 수 있는 권한이 없습니다.
+NotAuthenticatedUser: 죄송합니다만 아직 인증되지 는 않습니다.
+ConfirmEmail: 이메일 확인
+SuccessEmailConfirmation: 전자 메일이 성공적으로 확인되었습니다.
+FailEmailConfirmation: 실패 미끼는 확인 중에 발생, 다시 시도하시기 바랍니다
+Recover: 복구
+UsernameOrEmail: 사용자 이름 또는 이메일
+RecoverPassword: 암호 복구
+ResetPassword: 암호 재설정
+EmailConfirmation: 신청서구독 확인 이메일을 확인해 주세요.
+CheckYourEmail: 이메일을 확인하여 비밀번호를 재설정하십시오.
+UNotFoundOrMNotConfirmed: 사용자가 존재하지 않거나 확인되지 않음을 밝히지 마십시오.
+SuccessPasswordUpdate: 암호가 성공적으로 업데이트되었습니다.
+General: 일반
+Details: 세부 정보
+AddToCart: 장바구니에 추가
+Quantity: 수량
+Amount: 금액
+Total: 총
+Discount: 할인
+Shipping: 배송
+Handling: 처리
+Tax: 세금
+ShippingDiscount: 배송 할인
+CompletePurchase: 전체 구매
+ResidencyAddress: 레지던시 주소
+DeliveryAddress: 배달 주소
+State: 레지던시 주
+State2: 배달 상태
+PostalCode: 우편 번호
+CountryCode: 국가 코드
+SorryNoItemInYourCart: 장바구니에 항목 이 죄송합니다.
+AllsFieldsRequired: 모든 필드 필요
+OptionalFields: 선택적 필드
+ClientInfos: 클라이언트 정보
+YourInfoMustBeUpdated: 정보를 업데이트해야 합니다.

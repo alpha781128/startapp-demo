@@ -1,0 +1,25 @@
+﻿@inherits MainLayoutBase
+
+
+<CascadingValue Value="Translate">
+    <Navigation />
+    <!-- Main Container -->
+    <div id="main-page" dir="@direction" class="container main-collapse">
+        @Body
+
+        <!-- Hidden objects -->
+        <Toaster />
+        <ModalDialog />
+        <ResetPassword @ref="ResetPassword" ResetCode="@ResetCode"></ResetPassword>
+        <RecoverPassword @ref="RecoverPassword"></RecoverPassword>
+        <!-- Hidden objects -->
+
+    </div>
+    <!-- Main Container -->
+
+    <div class="main-collapse">
+        <Footer />
+    </div>
+
+</CascadingValue>
+

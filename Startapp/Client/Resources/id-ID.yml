@@ -1,0 +1,166 @@
+AppTitle: Mulaiapp
+Home: Rumah
+Articles: Artikel
+Article: Artikel
+Data: Data
+Contact: Hubungi
+SignIn: Tandatangan
+SignOut: Keluar
+SignUp: Tandatangan
+LogIn: Masuk
+LogOut: Log keluar
+Register: Daftar
+Settings: Pengaturan
+Profile: Profil
+Add: Menambahkan
+Update: Update
+Delete: Menghapus
+Added: Ditambahkan
+Updated: Diperbarui
+Deleted: Dihapus
+LoadSuccess: Berhasil dimuat
+AddSuccess: Berhasil ditambahkan
+UpdateSuccess: Berhasil diperbarui
+DeleteSuccess: Berhasil dihapus
+Successfully: Berhasil
+FailedToload: Gagal memuat
+FailedToAdd: Gagal menambahkan
+FailedToDelete: Gagal menghapus
+FailedToUpdate: Gagal memutakhirkan
+Search: Cari
+Save: Menyimpan
+Saving: Menyimpan...
+Cancel: Membatalkan
+Close: Dekat
+Confirm: Mengkonfirmasi
+Previous: Sebelumnya
+Next: Berikutnya
+Title: Judul
+Name: Nama
+Description: Deskripsi
+Price: Harga
+BuyingPrice: Harga beli
+SellingPrice: Harga jual
+OldPrice: Harga lama
+Negotiable: Negotiable
+UnitsInStock: Unit dalam stok
+Duration: Durasi
+Customer: Pelanggan
+Category: Kategori
+ArticleCategory: Kategori artikel
+Order: Order
+OrderItems: Item pesanan
+Photo: Foto
+Picture: Gambar
+Pictures: Gambar
+Permission: Izin
+Language: Bahasa
+Conversation: Percakapan
+Message: Pesan
+Configuration: Konfigurasi
+Introduction: Perkenalan
+ContactUs: Hubungi
+About: Tentang
+MinimizeMenu: Menu Minimalkan
+ProfileDetails: Detail profil
+Reset: Reset
+AreYouSureToDel: Yakin ingin menghapus
+ConfirmDelete: Konfirmasi hapus
+Loading: Loading...
+ErrorLoading: Pemuatan galat
+SorryNo: Maaf tidak
+Found: Ditemukan
+User: Pengguna
+user: Pengguna
+Users: Pengguna
+Role: Peran
+Roles: Peran
+Admin: Admin
+Administrator: Administrator
+administrator: Administrator
+users.view: Menampilkan pengguna
+users.manage: Mengelola pengguna
+roles.view: Lihat peran
+roles.manage: Mengelola peran
+roles.assign: Menetapkan peran
+UserName: Nama pengguna
+FirstName: Nama depan
+LastName: Nama belakang
+FullName: Nama lengkap
+Email: E-mail
+JobTitle: Jabatan pekerjaan
+PhoneNumber: Nomor telepon
+Password: Password
+RememberMe: Ingat saya
+IfMember: Jika anggota
+NotAMember: Bukan anggota
+OrSignInWith: Atau masuk dengan
+AddPicture: Menambahkan gambar
+ArticleTitle: Judul artikel
+UserTitle: Judul pengguna
+ArticleDescription: Deskripsi artikel
+ArticleDetails: Detail artikel
+TopViewed: Tampilan atas
+TopSelled: Atas dijual
+NewlyAdded: Baru ditambahkan
+Related: Terkait
+RelatedCategory: Kategori terkait
+Random: Acak
+UserPermissions: Izin pengguna
+RolePermissions: Izin peran
+Enabled: Diaktifkan
+MyDashboard: Dasbor saya
+MyArticles: Artikel saya
+Cart: Keranjang
+ShowDashboardStatistics: Perlihatkan statistik dasbor
+ShowDashboardNotifications: Tampilkan pemberitahuan dasbor
+ShowDashboardBanner: Perlihatkan banner dasbor
+ChangePassword: Ubah kata sandi
+ForgotPassword: Lupa kata sandi
+CurrentPassword: Kata sandi saat ini
+NewPassword: Kata sandi baru
+ConfirmPassword: Konfirmasi kata sandi
+Mobile: Mobile
+Address: Alamat
+City: Kota
+WebSite: Situs web
+BirthDate: Tanggal lahir
+Gender: Gender
+MoreInfos: Info lebih lanjut
+AuthorizingUser: Silakan tunggu sementara sistem selesai mengotorisasi pengguna.
+NotAuthorizedUser: Maaf, tetapi Anda tidak berwenang untuk mengakses halaman ini.
+NotAuthenticatedUser: Maaf tapi anda belum diautentikasi.
+ConfirmEmail: Konfirmasi email
+SuccessEmailConfirmation: Pos-el Anda telah berhasil dikonfirmasi
+FailEmailConfirmation: Faillure terjadi selama konfirmasi, Silakan coba lagi
+Recover: Memulihkan
+UsernameOrEmail: Nama pengguna atau email
+RecoverPassword: Pulihkan kata sandi
+ResetPassword: Reset kata sandi
+EmailConfirmation: Silakan periksa email Anda untuk mengonfirmasi langganan pada aplikasi kami
+CheckYourEmail: Silakan periksa email Anda untuk mereset kata sandi Anda
+UNotFoundOrMNotConfirmed: Jangan ungkapkan bahwa pengguna tidak ada atau tidak dikonfirmasi
+SuccessPasswordUpdate: Kata sandi Anda berhasil diperbarui
+General: Umum
+Details: Rincian
+AddToCart: Tambah ke ketere
+Quantity: Kuantitas
+Amount: Jumlah
+Total: Total
+Discount: Diskon terbaik
+Shipping: Pengiriman
+Handling: Penanganan
+Tax: Pajak
+ShippingDiscount: Diskon pengiriman
+CompletePurchase: Pembelian lengkap
+ResidencyAddress: Alamat tempat tinggal
+DeliveryAddress: Alamat pengiriman
+State: Keadaan residensi
+State2: Status pengiriman
+PostalCode: Kode pos
+CountryCode: Kode negara
+SorryNoItemInYourCart: Maaf tidak ada barang di keranjang belanja Anda
+AllsFieldsRequired: Bidang Alls Diperlukan
+OptionalFields: Bidang opsional
+ClientInfos: Info klien
+YourInfoMustBeUpdated: Informasi Anda harus diperbarui

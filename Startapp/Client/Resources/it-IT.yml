@@ -1,0 +1,166 @@
+AppTitle: App Start
+Home: Casa
+Articles: Articoli
+Article: Articolo
+Data: Dati
+Contact: Contattare
+SignIn: Accedi
+SignOut: Disconnettersi
+SignUp: Registrati
+LogIn: Accedi
+LogOut: Disconnettersi
+Register: Registro
+Settings: Impostazioni
+Profile: Profilo
+Add: Aggiungere
+Update: Aggiornamento
+Delete: Elimina
+Added: Aggiunto
+Updated: Aggiornato
+Deleted: Eliminato
+LoadSuccess: Caricato correttamente
+AddSuccess: Aggiunto correttamente
+UpdateSuccess: Aggiornato correttamente
+DeleteSuccess: Eliminato correttamente
+Successfully: Correttamente
+FailedToload: Impossibile caricare
+FailedToAdd: Impossibile aggiungere
+FailedToDelete: Impossibile eliminare
+FailedToUpdate: Impossibile aggiornare
+Search: Ricerca
+Save: Salvare
+Saving: Salvataggio...
+Cancel: Annulla
+Close: Vicino
+Confirm: Confermare
+Previous: Precedente
+Next: prossimo
+Title: Titolo
+Name: Nome
+Description: Descrizione
+Price: Prezzo
+BuyingPrice: Prezzo d'acquisto
+SellingPrice: Prezzo di vendita
+OldPrice: Vecchio prezzo
+Negotiable: Negoziabile
+UnitsInStock: Unità in magazzino
+Duration: Durata
+Customer: Cliente
+Category: Categoria
+ArticleCategory: Categoria articolo
+Order: Ordine
+OrderItems: Articoli d'ordine
+Photo: Foto
+Picture: Immagine
+Pictures: Immagini
+Permission: Autorizzazione
+Language: Lingua
+Conversation: Conversazione
+Message: Messaggio
+Configuration: Conﬁgurazione
+Introduction: Introduzione
+ContactUs: contattaci
+About: Circa
+MinimizeMenu: Menu Riduci a icona
+ProfileDetails: Dettagli del profilo
+Reset: Reimpostare
+AreYouSureToDel: Eliminare
+ConfirmDelete: Conferma eliminazione
+Loading: Caricamento...
+ErrorLoading: Caricamento degli errori
+SorryNo: Mi dispiace di no
+Found: Trovato
+User: Utente
+user: Utente
+Users: Gli utenti
+Role: Ruolo
+Roles: Ruoli
+Admin: Admin
+Administrator: Amministratore
+administrator: Amministratore
+users.view: Visualizzare gli utenti
+users.manage: Gestire gli utenti
+roles.view: Visualizzare i ruoli
+roles.manage: Gestire i ruoli
+roles.assign: Assegnare ruoli
+UserName: Nome utente
+FirstName: Nome
+LastName: Cognome
+FullName: Nome completo
+Email: Posta elettronica
+JobTitle: Titolo professionale
+PhoneNumber: Numero di telefono
+Password: Password
+RememberMe: Ricordati di me
+IfMember: Se membro
+NotAMember: Non è un membro
+OrSignInWith: Oppure accedi con
+AddPicture: Aggiungere un'immagine
+ArticleTitle: Titolo dell'articolo
+UserTitle: Titolo utente
+ArticleDescription: Descrizione dell'articolo
+ArticleDetails: Dettagli articolo
+TopViewed: Vista in alto
+TopSelled: I migliori venduti
+NewlyAdded: Appena aggiunto
+Related: Correlati
+RelatedCategory: Categoria correlata
+Random: Casuale
+UserPermissions: Autorizzazioni utente
+RolePermissions: Autorizzazioni ruolo
+Enabled: Abilitato
+MyDashboard: La mia dashboard
+MyArticles: I miei articoli
+Cart: Carrello
+ShowDashboardStatistics: Visualizzare le statistiche del dashboard
+ShowDashboardNotifications: Visualizzare le notifiche del dashboard
+ShowDashboardBanner: Mostra banner dashboard
+ChangePassword: Modificare la password
+ForgotPassword: Password dimenticata
+CurrentPassword: Password corrente
+NewPassword: Nuova password
+ConfirmPassword: Conferma password
+Mobile: Mobile
+Address: Indirizzo
+City: Città
+WebSite: Sito Web
+BirthDate: Data di nascita
+Gender: Genere
+MoreInfos: Maggiori informazioni
+AuthorizingUser: Attendere il completamento dell'autorizzazione dell'utente da parte del sistema.
+NotAuthorizedUser: Siamo spiacenti ma non sei autorizzato ad accedere a questa pagina.
+NotAuthenticatedUser: Siamo spiacenti ma non sei ancora autenticato.
+ConfirmEmail: Conferma via e-mail
+SuccessEmailConfirmation: La tua e-mail è stata confermata con successo
+FailEmailConfirmation: Faillure si verifica durante la conferma, riprovare
+Recover: Recuperare
+UsernameOrEmail: Nome utente o e-mail
+RecoverPassword: Recuperare la password
+ResetPassword: Reimpostare la password
+EmailConfirmation: Controlla la tua e-mail per confermare l'abbonamento sulla nostra applicazione
+CheckYourEmail: Controllare l'e-mail per reimpostare la password
+UNotFoundOrMNotConfirmed: Non rivelare che l'utente non esiste o non è confermato
+SuccessPasswordUpdate: La password è stata aggiornata correttamente
+General: Generale
+Details: Dettagli
+AddToCart: Aggiungi al carrello
+Quantity: Quantità
+Amount: Quantità
+Total: Totale
+Discount: Sconto
+Shipping: Spedizione
+Handling: Gestione
+Tax: tassa
+ShippingDiscount: Sconto spedizione
+CompletePurchase: Acquisto completo
+ResidencyAddress: Indirizzo di residenza
+DeliveryAddress: Indirizzo di consegna
+State: Stato di residenza
+State2: Stato di consegna
+PostalCode: Codice postale
+CountryCode: Codice paese
+SorryNoItemInYourCart: Non mi dispiace nessun articolo nel carrello
+AllsFieldsRequired: Tutti i campi Obbligatori
+OptionalFields: Campi facoltativi
+ClientInfos: Informazioni sul client
+YourInfoMustBeUpdated: Le tue informazioni devono essere aggiornate

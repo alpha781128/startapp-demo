@@ -1,0 +1,166 @@
+AppTitle: Startapp
+Home: Casa
+Articles: Artículos
+Article: Artículo
+Data: Datos
+Contact: Contacto
+SignIn: Inicia sesión
+SignOut: Cerrar sesión
+SignUp: Únete
+LogIn: Inicia sesión
+LogOut: Cerrar sesión
+Register: Registro
+Settings: Configuración
+Profile: Perfil
+Add: Añadir
+Update: actualizar
+Delete: Eliminar
+Added: Añadido
+Updated: Actualizado
+Deleted: Eliminado
+LoadSuccess: Cargado con éxito
+AddSuccess: Añadido con éxito
+UpdateSuccess: Actualizado con éxito
+DeleteSuccess: Eliminado con éxito
+Successfully: Exitosamente
+FailedToload: No se pudo cargar
+FailedToAdd: No se pudo agregar
+FailedToDelete: No se pudo eliminar
+FailedToUpdate: No se pudo actualizar
+Search: Búsqueda
+Save: Salvar
+Saving: Ahorro...
+Cancel: Cancelar
+Close: Cerca
+Confirm: Confirmar
+Previous: Anterior
+Next: próximo
+Title: Título
+Name: Nombre
+Description: Descripción
+Price: Precio
+BuyingPrice: Precio de compra
+SellingPrice: Precio de venta
+OldPrice: Precio antiguo
+Negotiable: Negociable
+UnitsInStock: Unidades en stock
+Duration: Duración
+Customer: Cliente
+Category: Categoría
+ArticleCategory: Categoría de artículo
+Order: Orden
+OrderItems: Artículos de pedido
+Photo: Foto
+Picture: Imagen
+Pictures: Fotos
+Permission: Permiso
+Language: Idioma
+Conversation: Conversación
+Message: Mensaje
+Configuration: Configuración
+Introduction: Introducción
+ContactUs: contáctenos
+About: acerca de
+MinimizeMenu: Minimizar menú
+ProfileDetails: Detalles del perfil
+Reset: Restablecer
+AreYouSureToDel: ¿Está seguro de que desea eliminar
+ConfirmDelete: Confirmar eliminación
+Loading: Carga...
+ErrorLoading: Error al cargar
+SorryNo: Lo siento, no
+Found: Encontrado
+User: Usuario
+user: Usuario
+Users: Usuarios
+Role: Papel
+Roles: Papeles
+Admin: Admin
+Administrator: Administrador
+administrator: Administrador
+users.view: Ver usuarios
+users.manage: Administrar usuarios
+roles.view: Ver roles
+roles.manage: Administrar roles
+roles.assign: Asignar roles
+UserName: Nombre de usuario
+FirstName: Nombre
+LastName: Apellido
+FullName: Nombre completo
+Email: Correo electrónico
+JobTitle: Título de trabajo
+PhoneNumber: Número de teléfono
+Password: Contraseña
+RememberMe: Recuérdame
+IfMember: Si miembro
+NotAMember: No es miembro
+OrSignInWith: O inicie sesión con
+AddPicture: Añadir imagen
+ArticleTitle: Título del artículo
+UserTitle: Título de usuario
+ArticleDescription: Descripción del artículo
+ArticleDetails: Detalles del artículo
+TopViewed: Vista superior
+TopSelled: Mejor vendido
+NewlyAdded: Recién añadido
+Related: relacionado
+RelatedCategory: Categoría relacionada
+Random: Aleatorio
+UserPermissions: Permisos de usuario
+RolePermissions: Permisos de rol
+Enabled: Habilitado
+MyDashboard: Mi tablero
+MyArticles: Mis artículos
+Cart: Carro
+ShowDashboardStatistics: Mostrar estadísticas del panel
+ShowDashboardNotifications: Mostrar notificaciones del panel
+ShowDashboardBanner: Mostrar banner del panel
+ChangePassword: Cambiar contraseña
+ForgotPassword: Olvidé la contraseña
+CurrentPassword: Contraseña actual
+NewPassword: Nueva contraseña
+ConfirmPassword: Confirmar contraseña
+Mobile: Móvil
+Address: Dirección
+City: Ciudad
+WebSite: Sitio web
+BirthDate: Fecha de nacimiento
+Gender: Género
+MoreInfos: Más información
+AuthorizingUser: Espere mientras el sistema completa el usuario que autoriza.
+NotAuthorizedUser: Lo sentimos, pero no está autorizado a acceder a esta página.
+NotAuthenticatedUser: Lo siento, pero aún no está autenticado.
+ConfirmEmail: Confirmación por correo electrónico
+SuccessEmailConfirmation: Su correo electrónico ha sido confirmado con éxito
+FailEmailConfirmation: Faillure se producen durante la confirmación, por favor inténtelo de nuevo
+Recover: Recuperar
+UsernameOrEmail: Nombre de usuario o correo electrónico
+RecoverPassword: Recuperar contraseña
+ResetPassword: Restablecer contraseña
+EmailConfirmation: Por favor, revise su correo electrónico para confirmar la suscripción en nuestra aplicación
+CheckYourEmail: Por favor, compruebe su correo electrónico para restablecer su contraseña
+UNotFoundOrMNotConfirmed: No revele que el usuario no existe o no está confirmado
+SuccessPasswordUpdate: Su contraseña se ha actualizado correctamente
+General: General
+Details: Detalles
+AddToCart: Añadir al carrito
+Quantity: Cantidad
+Amount: Cantidad
+Total: Total
+Discount: Descuento
+Shipping: Envío
+Handling: Manejo
+Tax: Impuestos
+ShippingDiscount: Descuento de envío
+CompletePurchase: Compra completa
+ResidencyAddress: Dirección de residencia
+DeliveryAddress: Dirección de entrega
+State: Estado de residencia
+State2: Estado de entrega
+PostalCode: Código postal
+CountryCode: Código de país
+SorryNoItemInYourCart: Lo sentimos, no hay artículo en su carrito de compras
+AllsFieldsRequired: Campos Alls Requerido
+OptionalFields: Campos opcionales
+ClientInfos: Información del cliente
+YourInfoMustBeUpdated: Sus informaciones deben ser actualizadas

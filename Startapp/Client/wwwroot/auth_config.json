@@ -1,0 +1,36 @@
+{
+  "facebook": {
+    "authorization_endpoint": "https://www.facebook.com/v8.0/dialog/oauth",
+    "token_endpoint": "https://graph.facebook.com/v8.0/oauth/access_token",
+    "issuer": "https://www.facebook.com",
+    "redirect_uri": "https://localhost:44385/",
+    "client_id": "client_id",
+    "client_secret": "client_secret",
+    "scope": "email",
+    "response_type": "id_token",
+    "oidc": false
+  },
+  "google": {
+    "authorization_endpoint": "https://accounts.google.com/o/oauth2/v2/auth",
+    "token_endpoint": "https://oauth2.googleapis.com/token",
+    "issuer": "https://accounts.google.com",
+    "redirect_uri": "https://localhost:44385",
+    "client_id": "client_id",
+    "client_secret": "client_secret",
+    "scope": "openid profile email",
+    "response_type": "token id_token",
+    "oidc": true
+  },
+  "linkedin": {
+    "authorization_endpoint": "https://www.linkedin.com/oauth/v2/authorization",
+    "token_endpoint": "https://www.linkedin.com/oauth/v2/accessToken",
+    "issuer": "https://www.linkedin.com",
+    "redirect_uri": "https://localhost:44385",
+    "client_id": "client_id",
+    "client_secret": "client_secret",
+    "scope": "openid profile email",
+    "response_type": "token id_token",
+    "oidc": true
+  }
+  
+}

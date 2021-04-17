@@ -1,0 +1,40 @@
+﻿
+@inherits LoginDisplayBase
+
+<AuthorizeView>
+    <Authorized>
+        <li class="nav-item dropdown avatar py-0 ml-3">
+            <a class="nav-link dropdown-toggle py-0 waves-effect waves-light dark-grey-text font-weight-bold"
+               id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                <div class="p-0 m-0">
+                    <img src="@Profile.Pic" class="rounded-circle z-depth-0 py-1" style="width: 32px;" alt="avatar image" />
+                </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                <a class="dropdown-item nav-collapse" href="@($"/settings")"><i class="fas fa-cogs light-blue-text mr-2"></i>@Translate.Keys["Settings"]</a>
+                <a class="dropdown-item nav-collapse" href="@($"/profile")">
+                    <i class="far fa-address-card light-blue-text mr-2"></i> @Translate.Keys["Profile"]: <em> @Profile.FullName </em>
+                </a>
+                <a class="dropdown-item nav-collapse" @onclick="(()=>LogOut())"><i class="fas fa-sign-out-alt light-blue-text mr-2"></i>@Translate.Keys["LogOut"]</a>
+            </div>
+        </li>
+    </Authorized>
+    <NotAuthorized>
+        <li class="nav-item dropdown avatar py-0 ml-3">
+            <a class="nav-link dropdown-toggle py-0 waves-effect waves-light dark-grey-text font-weight-bold"
+               id="navbarDropdownMenuLink-56" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="@Profile.Pic" class="rounded-circle z-depth-0 py-1" style="width: 32px;" alt="avatar image" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-56">
+                <a class="dropdown-item" @onclick="(()=>Register())"><i class="fas fa-user-plus light-blue-text mr-2"></i>@Translate.Keys["Register"]</a>
+                <a class="dropdown-item" @onclick="(()=>Login())"><i class="fas fa-sign-in-alt light-blue-text mr-2"></i>@Translate.Keys["LogIn"]</a>
+            </div>
+        </li>
+
+
+    </NotAuthorized>
+</AuthorizeView>
+
+<LoginDialog @ref="LoginDialog"></LoginDialog>
+<RegisterDialog @ref="RegisterDialog"></RegisterDialog>

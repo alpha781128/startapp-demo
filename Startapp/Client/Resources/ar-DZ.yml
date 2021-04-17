@@ -1,0 +1,166 @@
+AppTitle: متجر
+Home: الرئيسية
+Articles: المنتجات
+Article: المنتج
+Data: البيانات
+Contact: اتصال
+SinIn: تسجيل الدخول
+SignOut: تسجيل الخروج
+SignUp: التسجيل
+LogIn: تسجيل الدخول
+LogOut: تسجيل الخروج
+Register: تسجيل
+Settings: الاعدادات
+Profile: البروفيل 
+Add: اضافه
+Update: تحديث
+Delete: حذف
+Added: تمت الاضافة
+Updated: تم التحديث
+Deleted: تم الحذف
+LoadSuccess: تحميل بنجاح
+AddSuccess: تمت الإضافة بنجاح
+UpdateSuccess: تم التحديث بنجاح
+DeleteSuccess: تم حذف بنجاح
+Successfully: بنجاح
+FailedToload: فشل التحميل
+FailedToAdd: فشل إضافة
+FailedToDelete: فشل في الحذف
+FailedToUpdate: فشل التحديث
+Search: بحث
+Save: حفظ
+Saving: حفظ
+Cancel: إلغاء الأمر
+Close: اغلاق
+Confirm: تاكيد
+Previous: السابق
+Next: التالي
+Title: عنوان
+Name: اسم
+Description: وصف
+Price: سعر
+BuyingPrice: سعر الشراء
+SellingPrice: سعر البيع
+OldPrice: السعر القديم
+Negotiable: قابل للنقاش
+UnitsInStock: وحدات في المخزون
+Duration: مدة
+Customer: مستهلك
+Category: الفئه
+ArticleCategory: فئة المادة
+Order: الطلب
+OrderItems: أصناف الطلب
+Photo: صورة
+Picture: الصوره
+Permission: اذن
+Language: اللغة
+Conversation: المحادثه
+Message: رساله
+Configuration: تكوين
+Introduction: مقدمة
+ContactUs: اتصل بنا
+About: عن
+MinimizeMenu: تصغير القائمة
+ProfileDetails: تفاصيل الملف الشخصي
+Reset: اعاده تعيين
+AreYouSureToDel: هل تريد بالتأكيد حذف
+ConfirmDelete: تأكيد حذف
+Loading: تحميل...
+ErrorLoading: خطأ في التحميل
+SorryNo: آسف لا
+Found: وجدت
+User: المستخدم
+user: المستخدم
+Users: المستخدمين
+Role: دور
+Roles: ادوار
+Admin: المشرف
+Administrator: مسؤول
+administrator: مسؤول
+users.view: عرض المستخدمين
+users.manage: إدارة المستخدمين
+roles.view: عرض الأدوار
+roles.manage: إدارة الأدوار
+roles.assign: تعيين أدوار
+UserName: اسم المستخدم
+FirstName: الاسم الأول
+LastName: اسم العائلة
+FullName: الاسم الكامل
+Email: البريد الالكتروني
+JobTitle: المسمى الوظيفي
+PhoneNumber: رقم الهاتف
+Password: كلمه المرور
+ConfirmPassword: تأكيد كلمة المرور
+RememberMe: تذكرني
+IfMember: إذا كان عضوا
+NoAMember: ليس عضواً
+OrSignInWith: أو تسجيل الدخول باستخدام
+AddPicture: إضافة صورة
+ArticleTitle: عنوان المقال
+UserTitle: عنوان المستخدم
+ArticleDescription: وصف المقالة
+ArticleDetails: تفاصيل المقالة
+TopViewed: أعلى عرض
+TopSelled: أعلى بيع
+NewlyAdded: تمت إضافتها حديثاً
+Related: ذات الصله
+RelatedCategory: الفئة ذات الصلة
+Random: عشوائيه
+UserPermissions: أذونات المستخدم
+RolePermissions: أذونات الدور
+Enabled: تمكين
+MyDashboard: لوحة معلوماتي
+MyArticles: مقالاتي
+Cart: سلة
+ShowDashboardStatistics: إظهار إحصائيات لوحة المعلومات
+ShowDashboardNotifications: إظهار إشعارات لوحة المعلومات
+ShowDashboardBanner: إظهار شعار لوحة المعلومات
+ChangePassword: تغيير كلمة المرور
+ForgotPassword: نسيت كلمة المرور
+CurrentPassword: كلمة المرور الحالية
+NewPassword: كلمة مرور جديدة
+Mobile: المحمول
+Address: عنوان
+City: المدينه
+WebSite: موقع ويب
+BirthDate: تاريخ الميلاد
+Gender: الجنس
+MoreInfos: المزيد من المعلومات
+AuthorizingUser: الرجاء الانتظار حتى اكتمال النظام تفويض المستخدم.
+NotAuthorizedUser: عذراً، لكن ليس مسموحاً لك بالدخول إلى هذه الصفحة.
+NotAuthenticatedUser: آسف ولكن لم يتم مصادقة بعد.
+ConfirmEmail: تأكيد البريد الإلكتروني
+SuccessEmailConfirmation: تم تأكيد البريد الإلكتروني بنجاح
+FailEmailConfirmation: Faillure تحدث أثناء التأكيد، الرجاء المحاولة مرة أخرى
+Recover: استرداد
+UsernameOrEmail: اسم المستخدم أو البريد الإلكتروني
+RecoverPassword: استعادة كلمة المرور
+ResetPassword: إعادة تعيين كلمة المرور
+EmailConfirmation: يرجى التحقق من بريدك الإلكتروني لتأكيد الاشتراك في تطبيقنا
+CheckYourEmail: يرجى التحقق من بريدك الإلكتروني لإعادة تعيين كلمة المرور
+UNotFoundOrMNotConfirmed: لا تكشف أن المستخدم غير موجود أو لم يتم تأكيد
+SuccessPasswordUpdate: تم تحديث كلمة المرور بنجاح
+General: عام
+Details: التفاصيل
+AddToCart: إضافة إلى السلة
+Quantity: كميه
+Amount: المبلغ
+Total: مجموع
+Discount: الخصم
+Shipping: الشحن
+Handling: معالجه
+Tax: الضريبيه
+ShippingDiscount: خصم الشحن
+CompletePurchase: شراء كامل
+ResidencyAddress: عنوان الإقامة
+DeliveryAddress: عنوان التسليم
+State: حالة الإقامة
+State2: حالة التسليم
+PostalCode: الرمز البريدي
+CountryCode: كود البلد
+SorryNoItemInYourCart: عذراً لا يوجد عنصر في عربة التسوق
+AllsFieldsRequired: الكل الحقول المطلوبة
+OptionalFields: الحقول الاختيارية
+ClientInfos: معلومات العميل
+YourInfoMustBeUpdated: يجب تحديث المعلومات الخاصة بك
+

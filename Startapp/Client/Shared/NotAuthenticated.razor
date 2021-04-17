@@ -1,0 +1,49 @@
+﻿@page "/NotAuthenticated"
+
+
+@inject IJSRuntime JsRuntime
+@inject ILanguageContainerService Translate
+
+<main class="mt-4">
+    <div class="container">
+
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 text-center dark-grey-text mb-4">
+            <AuthorizeView>
+                <Authorized>
+                    <a class="btn btn-info btn-sm btn-rounded" href="/" role="button">@Translate.Keys["Home"]</a>
+
+                </Authorized>
+
+
+                <NotAuthorized>
+                    <img src="images/Unhappy.jpg" />
+
+                    <h3 class="font-weight-bold mt-4 ">@Translate.Keys["NotAuthenticatedUser"]</h3>
+
+                    <a class="btn btn-info btn-sm btn-rounded" @onclick="(()=>Register())" role="button">@Translate.Keys["Register"]</a>
+                    <a class="btn btn-info btn-sm btn-rounded" @onclick="(()=>Login())" role="button">@Translate.Keys["LogIn"]</a>
+                </NotAuthorized>
+
+
+            </AuthorizeView>
+
+               
+        </section>
+        <!--Section: Content-->
+
+    </div>
+</main>
+
+@code {
+
+    private async void Login()
+    {
+        await JsRuntime.InvokeAsync<object>("ShowModal", "loginModal");
+    }
+
+    private async void Register()
+    {
+        await JsRuntime.InvokeAsync<object>("ShowModal", "registerModal");
+    }
+}

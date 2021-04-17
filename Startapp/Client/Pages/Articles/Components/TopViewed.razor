@@ -1,0 +1,80 @@
+﻿<!-- Section top viewed products -->
+@if (Articles.Count > 0)
+{
+<div class="divider-new mt-2">
+    <h3 class="h3-responsive font-weight-bold blue-text mx-3">@Translate.Keys["TopViewed"]</h3>
+</div>
+}
+
+
+<section>
+    @if (Loading)
+    {
+<Spinner></Spinner> }
+else
+{
+@if (Articles.Count > 0)
+{
+<div class="row">
+    @foreach (var article in Articles)
+    {
+<div class="col-md-4">
+    <div class="row mt-5 py-2 mb-4 hoverable align-items-center">
+        <div class="col-5">
+            <a href="@($"/articledetails/{article.Id}")">
+                <img src="@(Picture(article.Pictures.FirstOrDefault()))" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="col-7">
+            <!-- Title -->
+            <a class="pt-5">
+                <strong>@article.Title </strong>
+            </a>
+            <!-- Rating -->
+            <ul class="rating inline-ul">
+                <li>
+                    <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                    <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                    <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                    <i class="fas fa-star blue-text"></i>
+                </li>
+                <li>
+                    <i class="fas fa-star grey-text"></i>
+                </li>
+            </ul>
+            <!-- Price -->
+            <h6 class="h6-responsive font-weight-bold dark-grey-text">
+                <span class="red-text">
+                    <strong>$ @string.Format("{0:# ### ###.00}", article.SellingPrice)</strong>
+                </span>
+                <span class="grey-text">
+                    <small>
+                        @if (article.OldPrice > 0)
+                        {
+                            <s>$ @string.Format("{0:# ### ###.00}", article.OldPrice)</s>
+                        }
+                    </small>
+                </span>
+            </h6>
+        </div>
+    </div>
+</div>}
+</div>}}
+</section>
+<!-- Section top viewed products -->
+
+
+@if (Articles.Count > 0)
+{
+<div class="row">
+    <div class="col">
+        <Pagination MetaData="MetaData" Spread="2" SelectedPage="SelectedPage" />
+    </div>
+</div>
+}

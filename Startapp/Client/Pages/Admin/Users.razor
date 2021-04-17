@@ -1,0 +1,75 @@
+﻿@page "/users"
+@*@attribute [Authorize(Roles = "administrator")]*@
+@*@attribute [Authorize(Policy = Policies.ViewAllUsersPolicy)]*@
+@using Startapp.Client.Pages.Admin.Components
+@inherits UsersBase
+
+<main class="m-0">
+
+    <section class="section">
+
+        <div class="d-flex">
+            <div class="mr-auto">
+                <!-- Search form -->
+                <div class="search-form mx-0" role="search" style="max-width: 180px; display: inline-block">
+                    <div class="form-group md-form my-0 waves-light">
+                        <input @onkeyup="@(e => EnterKeyPress(e))" @oninput="(e=>SearchKeyup(e))" value="@SearchTerm" type="text" class="form-control" placeholder="@Translate.Keys["Search"]">
+                    </div>
+                </div>
+                <button disabled="@DisableSearch" @onclick="(()=>Search())" class="btn aqua-gradient btn-sm btn-rounded"><i class="fas fa-search text-white"></i></button>
+
+            </div>
+            <div>
+                <AuthorizeView Policy="@Policies.ManageAllUsersPolicy">
+                    <button @onclick="@(()=>AddUpdateUser(new AppUser()))" class="btn btn-sm blue-gradient btn-rounded"><i class="fas fa-plus"></i></button>
+                </AuthorizeView>
+
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="mr-auto">
+                <h4 class="font-weight-bold mt-1 title-1">
+                    <strong>@Translate.Keys["Users"]</strong>
+                </h4>
+            </div>
+            <div>
+                @if (Filtred)
+                {
+                    <a data-toggle="tooltip" data-placement="top" title="desactive filter" class="btn-floating btn-sm purple-gradient" @onclick="@(()=>Filter())"><i class="fas fa-filter"></i></a>
+                }
+            </div>
+        </div>
+
+        <hr class="teal mb-2">
+
+        <div class="row">
+            <div class="col">
+                @if (Loading)
+                {
+                    <div class="Loading-Start">
+                        <div>
+                            <img src="images/Spin-1s-200px.gif" />
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <UsersList Users="Users" Message="@Message" UpdateEventCallback="AddUpdateUser" DeleteEventCallback="DeleteUser" />
+                }
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <Pagination MetaData="MetaData" Spread="2" SelectedPage="SelectedPage" />
+            </div>
+        </div>
+
+
+        <AddUserDialog @ref="AddUserDialog" Roles="Roles" CloseEventCallback="AddUpdateUser_OnDialogClose"></AddUserDialog>
+
+
+    </section>
+
+</main>

@@ -1,0 +1,166 @@
+AppTitle: Başlangıç uygulaması
+Home: Ev
+Articles: Makaleler
+Article: Makale
+Data: Veri
+Contact: Iletişim
+SignIn: Oturum Aç
+SignOut: Oturum aç
+SignUp: Kaydol
+LogIn: Oturum aç
+LogOut: Oturumu çıkış
+Register: Kayıt yaptır
+Settings: Ayarlar
+Profile: Profil
+Add: Ekle
+Update: Güncelleştirme
+Delete: Silmek
+Added: Eklen -di
+Updated: Güncel -leştirilmiş
+Deleted: Silin
+LoadSuccess: Başarıyla yüklendi
+AddSuccess: Başarıyla eklendi
+UpdateSuccess: Başarıyla güncelleştirildi
+DeleteSuccess: Başarıyla silindi
+Successfully: Başarı -yla
+FailedToload: Yüklenemeyen
+FailedToAdd: Eklenemedi
+FailedToDelete: Silinemedi
+FailedToUpdate: Güncelleştirmek için başarısız oldu
+Search: Arama
+Save: Kaydetmek
+Saving: Tasarrufu...
+Cancel: İptal
+Close: Yakın
+Confirm: Onaylamak
+Previous: Önceki
+Next: Sonraki
+Title: Başlık
+Name: Adı
+Description: Açıklama
+Price: Fiyat
+BuyingPrice: Satın alma fiyatı
+SellingPrice: Satış fiyatı
+OldPrice: Eski fiyat
+Negotiable: Pazarlık
+UnitsInStock: Stoktaki Birimler
+Duration: Süre
+Customer: Müşteri
+Category: Kategori
+ArticleCategory: Makale kategorisi
+Order: Sipariş
+OrderItems: Sipariş öğeleri
+Photo: Fotoğraf
+Picture: Resim
+Pictures: Resim
+Permission: Izni
+Language: Dil
+Conversation: Konuşma
+Message: İleti
+Configuration: Yapılandırma
+Introduction: Giriş
+ContactUs: Bize Ulaşın
+About: Hakkı -nda
+MinimizeMenu: Menüyü en aza indir
+ProfileDetails: Profil detayları
+Reset: Sıfırlamak
+AreYouSureToDel: Silmek istediğinizden emin misiniz?
+ConfirmDelete: Silmeyi onayla
+Loading: Yükleme...
+ErrorLoading: Hata yükleme
+SorryNo: Üzgünüm hayır
+Found: Bulundu
+User: Kullanıcı
+user: Kullanıcı
+Users: Kullanıcı
+Role: Rolü
+Roles: Rolleri
+Admin: Yönetici
+Administrator: Yönetici
+administrator: Yönetici
+users.view: Kullanıcıları görüntüleme
+users.manage: Kullanıcıları yönetme
+roles.view: Rolleri görüntüleme
+roles.manage: Rolleri yönetme
+roles.assign: Roller atama
+UserName: Kullanıcı adı
+FirstName: Ad soyad
+LastName: Soyadı
+FullName: Tam ad
+Email: E‑posta
+JobTitle: İş unvanı
+PhoneNumber: Telefon numarası
+Password: Parola
+RememberMe: Beni hatırla
+IfMember: Üye ise
+NotAMember: Üye değil
+OrSignInWith: Veya oturum
+AddPicture: Resim ekleme
+ArticleTitle: Makale başlığı
+UserTitle: Kullanıcı başlığı
+ArticleDescription: Makale açıklaması
+ArticleDetails: Makale ayrıntıları
+TopViewed: En çok izlenen
+TopSelled: En çok satanlar
+NewlyAdded: Yeni eklenen
+Related: Ilgili
+RelatedCategory: İlgili kategori
+Random: Rasgele
+UserPermissions: Kullanıcı izinleri
+RolePermissions: Rol izinleri
+Enabled: Etkin
+MyDashboard: Panom
+MyArticles: Makalelerim
+Cart: Sepeti
+ShowDashboardStatistics: Pano istatistiklerini göster
+ShowDashboardNotifications: Pano bildirimlerini göster
+ShowDashboardBanner: Pano bayrağını göster
+ChangePassword: Parolayı değiştirme
+ForgotPassword: Parolayı unuttum
+CurrentPassword: Geçerli parola
+NewPassword: Yeni parola
+ConfirmPassword: Parolayı onaylama
+Mobile: Mobil
+Address: Adres
+City: Şehir
+WebSite: Web sitesi
+BirthDate: Doğum tarihi
+Gender: Cinsiyet
+MoreInfos: Daha fazla bilgi
+AuthorizingUser: Lütfen sistem yetkilendirme kullanıcısını tamamlarken bekleyin.
+NotAuthorizedUser: Üzgünüz ancak bu sayfaya erişme yetkiniz yok.
+NotAuthenticatedUser: Üzgünüm ama henüz doğrulanmış değil.
+ConfirmEmail: E-posta onayı
+SuccessEmailConfirmation: E-postanız başarıyla doğrulandı
+FailEmailConfirmation: Başarısızlık onay sırasında meydana, Lütfen tekrar deneyin
+Recover: Kurtarmak
+UsernameOrEmail: Kullanıcı adı veya e-posta
+RecoverPassword: Parolayı kurtarma
+ResetPassword: Parolayı sıfırla
+EmailConfirmation: Başvurumuzda aboneliği onaylamak için lütfen e-postanızı kontrol edin
+CheckYourEmail: Parolanızı sıfırlamak için lütfen e-postanızı kontrol edin
+UNotFoundOrMNotConfirmed: Kullanıcının var olmadığını veya onaylanmadığını açıklamayın
+SuccessPasswordUpdate: Parolanız başarıyla güncelleştirildi
+General: Genel
+Details: Şey
+AddToCart: Sepete ekle
+Quantity: Miktar
+Amount: Tutar
+Total: Toplam
+Discount: Indirim
+Shipping: Nakliye
+Handling: Işleme
+Tax: Vergi
+ShippingDiscount: Nakliye indirimi
+CompletePurchase: Tam satın alma
+ResidencyAddress: İkamet adresi
+DeliveryAddress: Teslimat adresi
+State: İkamet durumu
+State2: Teslimat durumu
+PostalCode: Posta kodu
+CountryCode: Ülke kodu
+SorryNoItemInYourCart: Alışveriş sepetinizdeki hiçbir öğe yiyürünme
+AllsFieldsRequired: Gerekli Alls alanları
+OptionalFields: İsteğe bağlı alanlar
+ClientInfos: İstemci bilgileri
+YourInfoMustBeUpdated: Bilgileriniz güncelleştirilmelidir

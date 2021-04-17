@@ -1,0 +1,166 @@
+AppTitle: स्टार्टऐप
+Home: को
+Articles: लेख
+Article: आर्टिकल
+Data: डाटा
+Contact: संपर्क
+SignIn: साइन इन करें
+SignOut: साइन आउट करें
+SignUp: नाम लिखो
+LogIn: लॉग इन करो
+LogOut: लॉग आउट करें
+Register: पंजीकृत करें
+Settings: सेटिंग्स
+Profile: ख़ाका
+Add: आगे कहना
+Update: अद्यतन
+Delete: हटाएँ
+Added: जोड़ा
+Updated: अद्यतन
+Deleted: हटाए गए
+LoadSuccess: सफलतापूर्वक लोड किया गया
+AddSuccess: सफलतापूर्वक जोड़ा गया
+UpdateSuccess: सफलतापूर्वक अपडेट किया गया
+DeleteSuccess: सफलतापूर्वक हटाया गया
+Successfully: सफलतापूर्वक
+FailedToload: लोड करने में विफल रहा
+FailedToAdd: जोड़ने में विफल रहा
+FailedToDelete: हटाने में विफल रहा
+FailedToUpdate: अद्यतन करने में विफल रहा
+Search: खोज
+Save: सहेजें
+Saving: बचत।।।
+Cancel: रद्द करना
+Close: बंद करना
+Confirm: सुदृढ़ करना
+Previous: पिछला
+Next: अगला
+Title: शीर्षक
+Name: नाम
+Description: या क़िस्‍म
+Price: मूल्य
+BuyingPrice: कीमत खरीदना
+SellingPrice: विक्रय मूल्‍य
+OldPrice: पुरानी कीमत
+Negotiable: परक्राम्य
+UnitsInStock: स्टॉक में इकाइयां
+Duration: मियाद
+Customer: ख़रीदार
+Category: कोटि
+ArticleCategory: आलेख श्रेणी
+Order: आदेश
+OrderItems: ऑर्डर आइटम
+Photo: फोटो
+Picture: चित्र
+Pictures: चित्र
+Permission: अनुमति
+Language: भाषा
+Conversation: वार्ता
+Message: संदेश
+Configuration: कॉन्फ़िगरेशन
+Introduction: परिचय
+ContactUs: हमसे संपर्क करें
+About: करीबन
+MinimizeMenu: मेनू को कम से कम करें
+ProfileDetails: प्रोफाइल विवरण
+Reset: रीसेट
+AreYouSureToDel: क्या आप सुनिश्चित हैं कि आप हटाना चाहते हैं
+ConfirmDelete: हटाने की पुष्टि करें
+Loading: लोड।।।
+ErrorLoading: त्रुटि लोड िंग
+SorryNo: क्षमा करें नहीं
+Found: पाया
+User: उपभोक्ता
+user: उपभोक्ता
+Users: उपयोगकर्ताओं
+Role: भूमिका
+Roles: भूमिकाओं
+Admin: व्यवस्थापक
+Administrator: प्रबंधक
+administrator: प्रबंधक
+users.view: उपयोगकर्ताओं को देखें
+users.manage: उपयोगकर्ताओं को प्रबंधित करें
+roles.view: देखें भूमिकाएं
+roles.manage: भूमिकाओं का प्रबंधन करें
+roles.assign: भूमिकाएं असाइन करें
+UserName: उपयोगकर्ता नाम
+FirstName: पहला नाम
+LastName: अंतिम नाम
+FullName: पूरा नाम
+Email: ई मेल
+JobTitle: नौकरी का शीर्षक
+PhoneNumber: फोन संख्या
+Password: पासवर्ड
+RememberMe: मुझे याद रखें
+IfMember: यदि सदस्य
+NotAMember: सदस्य नहीं
+OrSignInWith: या साथ में साइन इन करें
+AddPicture: तस्वीर जोड़ें
+ArticleTitle: लेख शीर्षक
+UserTitle: उपयोगकर्ता शीर्षक
+ArticleDescription: लेख विवरण
+ArticleDetails: लेख विवरण
+TopViewed: शीर्ष देखा गया
+TopSelled: शीर्ष बेचा
+NewlyAdded: नए जोड़े गए
+Related: संबंधित
+RelatedCategory: संबंधित श्रेणी
+Random: यादृच्छिक
+UserPermissions: उपयोगकर्ता की अनुमति
+RolePermissions: भूमिका अनुमतियां
+Enabled: सक्षम
+MyDashboard: मेरा डैशबोर्ड
+MyArticles: मेरे लेख
+Cart: गाड़ी
+ShowDashboardStatistics: डैशबोर्ड के आंकड़े दिखाएं
+ShowDashboardNotifications: डैशबोर्ड सूचनाएं दिखाएं
+ShowDashboardBanner: डैशबोर्ड बैनर दिखाएं
+ChangePassword: पासवर्ड बदलें
+ForgotPassword: पासवर्ड भूल गया
+CurrentPassword: वर्तमान पासवर्ड
+NewPassword: नया पासवर्ड
+ConfirmPassword: पासवर्ड की पुष्टि करें
+Mobile: मोबाइल
+Address: पता
+City: शहर
+WebSite: वेब साइट
+BirthDate: जन्म तिथि
+Gender: लिंग
+MoreInfos: अधिक जानकारी
+AuthorizingUser: सिस्टम को उपयोगकर्ता को पूरा करने के दौरान प्रतीक्षा करें।
+NotAuthorizedUser: क्षमा करें लेकिन आप इस पृष्ठ तक पहुंचने के लिए अधिकृत नहीं हैं।
+NotAuthenticatedUser: क्षमा करें लेकिन आप अभी तक प्रमाणित नहीं हैं।
+ConfirmEmail: ईमेल पुष्टि
+SuccessEmailConfirmation: आपके ई-मेल की सफलतापूर्वक पुष्टि की गई है
+FailEmailConfirmation: पुष्टि के दौरान असफल होते हैं, कृपया फिर से प्रयास करें
+Recover: पुनर्प्राप्त
+UsernameOrEmail: उपयोगकर्ता नाम या ईमेल
+RecoverPassword: पासवर्ड रिकवर
+ResetPassword: पासवर्ड रीसेट
+EmailConfirmation: कृपया हमारे आवेदन पर सदस्यता की पुष्टि करने के लिए अपने ईमेल की जांच करें
+CheckYourEmail: कृपया अपना पासवर्ड रीसेट करने के लिए अपना ईमेल देखें
+UNotFoundOrMNotConfirmed: यह प्रकट न करें कि उपयोगकर्ता मौजूद नहीं है या पुष्टि नहीं की गई है
+SuccessPasswordUpdate: आपका पासवर्ड सफलतापूर्वक अपडेट किया गया
+General: सामान्य
+Details: विवरण
+AddToCart: कार्ट में डालें
+Quantity: बड़ तादाद
+Amount: कुल धनराशि
+Total: कुल
+Discount: छूट
+Shipping: नौवहन
+Handling: हैंडलिंग
+Tax: टैक्‍स
+ShippingDiscount: शिपिंग छूट
+CompletePurchase: पूरी खरीद
+ResidencyAddress: रेजीडेंसी पता
+DeliveryAddress: डिलीवरी पता
+State: रेजीडेंसी राज्य
+State2: डिलीवरी की स्थिति
+PostalCode: पोस्टल कोड
+CountryCode: देश कोड
+SorryNoItemInYourCart: क्षमा करें अपनी शॉपिंग कार्ट में कोई आइटम
+AllsFieldsRequired: ऑल्स फील्ड्स की आवश्यकता
+OptionalFields: वैकल्पिक फ़ील्ड
+ClientInfos: ग्राहक जानकारी
+YourInfoMustBeUpdated: आपकी जानकारी अपडेट की जानी चाहिए

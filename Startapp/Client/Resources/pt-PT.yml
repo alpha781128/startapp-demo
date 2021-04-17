@@ -1,0 +1,166 @@
+AppTitle: Startapp
+Home: Casa
+Articles: Artigos
+Article: Artigo
+Data: Dados
+Contact: Contato
+SignIn: Entrar
+SignOut: Assinar
+SignUp: Inscrição
+LogIn: Iniciar sessão
+LogOut: Log out
+Register: Registro
+Settings: Configurações
+Profile: Perfil
+Add: Adicionar
+Update: Atualização
+Delete: Excluir
+Added: Adicionado
+Updated: Atualizado
+Deleted: Excluído
+LoadSuccess: Carregado com sucesso
+AddSuccess: Adicionado com sucesso
+UpdateSuccess: Atualizado com sucesso
+DeleteSuccess: Excluído com sucesso
+Successfully: Sucesso
+FailedToload: Falha ao carregar
+FailedToAdd: Falha ao adicionar
+FailedToDelete: Falha ao excluir
+FailedToUpdate: Falha na atualização
+Search: Busca
+Save: Salvar
+Saving: Salvar...
+Cancel: Cancelar
+Close: Perto
+Confirm: Confirmar
+Previous: Anterior
+Next: Próximo
+Title: Título
+Name: Nome
+Description: Descrição
+Price: Preço
+BuyingPrice: Preço de compra
+SellingPrice: Preço de venda
+OldPrice: Preço antigo
+Negotiable: Negociável
+UnitsInStock: Unidades em estoque
+Duration: Duração
+Customer: Cliente
+Category: Categoria
+ArticleCategory: Categoria de artigo
+Order: Ordem
+OrderItems: Itens de pedidos
+Photo: Foto
+Picture: Imagem
+Pictures: Fotos
+Permission: Permissão
+Language: Idioma
+Conversation: Conversa
+Message: Mensagem
+Configuration: Configuração
+Introduction: Introdução
+ContactUs: Entre em contato conosco
+About: Sobre
+MinimizeMenu: Minimizar o menu
+ProfileDetails: Detalhes do perfil
+Reset: Redefinir
+AreYouSureToDel: Você tem certeza que deseja excluir
+ConfirmDelete: Confirmar exclusão
+Loading: Carregar...
+ErrorLoading: Carregamento de erros
+SorryNo: Desculpe, não.
+Found: Encontrado
+User: Usuário
+user: Usuário
+Users: Usuários
+Role: Papel
+Roles: Papéis
+Admin: Admin
+Administrator: Administrador
+administrator: Administrador
+users.view: Exibir usuários
+users.manage: Gerenciar usuários
+roles.view: Ver papéis
+roles.manage: Gerenciar funções
+roles.assign: Atribuir funções
+UserName: Nome do usuário
+FirstName: Primeiro nome
+LastName: Sobrenome
+FullName: Nome completo
+Email: E-mail
+JobTitle: Título de trabalho
+PhoneNumber: Número de telefone
+Password: Senha
+RememberMe: Lembre-se de mim.
+IfMember: Se membro
+NotAMember: Não é um membro
+OrSignInWith: Ou entrar com
+AddPicture: Adicionar imagem
+ArticleTitle: Título do artigo
+UserTitle: Título de usuário
+ArticleDescription: Descrição do artigo
+ArticleDetails: Detalhes do artigo
+TopViewed: Topo visto
+TopSelled: Topo vendido
+NewlyAdded: Recém-adicionado
+Related: Relacionadas
+RelatedCategory: Categoria relacionada
+Random: Aleatório
+UserPermissions: Permissões do usuário
+RolePermissions: Permissões de papel
+Enabled: Habilitado
+MyDashboard: Meu painel
+MyArticles: Meus artigos
+Cart: Carrinho
+ShowDashboardStatistics: Mostrar estatísticas do painel de controle
+ShowDashboardNotifications: Mostrar notificações de painel
+ShowDashboardBanner: Mostrar banner de painel
+ChangePassword: Alterar senha
+ForgotPassword: Esqueci a senha
+CurrentPassword: Senha atual
+NewPassword: Nova senha
+ConfirmPassword: Confirmar senha
+Mobile: Móvel
+Address: Endereço
+City: Cidade
+WebSite: Site
+BirthDate: Data de nascimento
+Gender: Gênero
+MoreInfos: Mais informações
+AuthorizingUser: Aguarde enquanto o sistema completa o usuário autorizador.
+NotAuthorizedUser: Desculpe, mas você não está autorizado a acessar esta página.
+NotAuthenticatedUser: Desculpe, mas você ainda não foi autenticado.
+ConfirmEmail: Confirmação por e-mail
+SuccessEmailConfirmation: Seu e-mail foi confirmado com sucesso
+FailEmailConfirmation: Faillure ocorrer durante a confirmação, por favor tente novamente
+Recover: Recuperar
+UsernameOrEmail: Nome de usuário ou e-mail
+RecoverPassword: Recuperar senha
+ResetPassword: Redefinir senha
+EmailConfirmation: Por favor, verifique seu e-mail para confirmar a assinatura em nosso aplicativo
+CheckYourEmail: Por favor, verifique seu e-mail para redefinir sua senha
+UNotFoundOrMNotConfirmed: Não revele que o usuário não existe ou não é confirmado
+SuccessPasswordUpdate: Sua senha atualizada com sucesso
+General: Geral
+Details: Detalhes
+AddToCart: Adicione ao carrinho
+Quantity: Quantidade
+Amount: Quantidade
+Total: Total
+Discount: Desconto
+Shipping: Transporte
+Handling: Manipulação
+Tax: Imposto
+ShippingDiscount: Desconto no frete
+CompletePurchase: Compra completa
+ResidencyAddress: Endereço de residência
+DeliveryAddress: Endereço de entrega
+State: Estado de residência
+State2: Estado de entrega
+PostalCode: Código postal
+CountryCode: Código de país
+SorryNoItemInYourCart: Desculpe nenhum item em seu carrinho de compras
+AllsFieldsRequired: Todos os campos Necessários
+OptionalFields: Campos opcionais
+ClientInfos: Informações do cliente
+YourInfoMustBeUpdated: Suas informações devem ser atualizadas

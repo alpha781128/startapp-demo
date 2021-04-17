@@ -1,0 +1,166 @@
+AppTitle: Startapp
+Home: Startseite
+Articles: Artikel
+Article: Artikel
+Data: Daten
+Contact: Kontakt
+SignIn: Anmelden
+SignOut: Abmelden
+SignUp: Anmelden
+LogIn: Anmelden
+LogOut: Abmelden
+Register: Registrieren
+Settings: Einstellungen
+Profile: Profil
+Add: Hinzufügen
+Update: aktualisieren
+Delete: Löschen
+Added: Hinzugefügt
+Updated: aktualisierte
+Deleted: Gelöscht
+LoadSuccess: Erfolgreich geladen
+AddSuccess: Erfolgreich hinzugefügt
+UpdateSuccess: Erfolgreich aktualisiert
+DeleteSuccess: Erfolgreich gelöscht
+Successfully: Erfolgreich
+FailedToload: Fehler beim Laden
+FailedToAdd: Fehler beim Hinzufügen
+FailedToDelete: Fehler beim Löschen
+FailedToUpdate: Fehler beim Aktualisieren
+Search: Suche
+Save: Speichern
+Saving: Speichern...
+Cancel: Abbrechen
+Close: Schließen
+Confirm: Bestätigen
+Previous: Vorherigen
+Next: nächster
+Title: Titel
+Name: Namen
+Description: Beschreibung
+Price: Preis
+BuyingPrice: Kaufpreis
+SellingPrice: Verkaufspreis
+OldPrice: Alter Preis
+Negotiable: Verhandelbar
+UnitsInStock: Einheiten auf Lager
+Duration: Dauer
+Customer: Kunde
+Category: Kategorie
+ArticleCategory: Artikelkategorie
+Order: Bestellung
+OrderItems: Bestellartikel
+Photo: Foto
+Picture: Bild
+Pictures: Bilder
+Permission: Berechtigung
+Language: Sprache
+Conversation: Gespräch
+Message: Nachricht
+Configuration: Konfiguration
+Introduction: Einleitung
+ContactUs: kontaktieren Sie uns
+About: Über
+MinimizeMenu: Minimieren des Menüs
+ProfileDetails: Profildetails
+Reset: Zurücksetzen
+AreYouSureToDel: Möchten Sie wirklich löschen?
+ConfirmDelete: Bestätigen sie löschen
+Loading: Laden...
+ErrorLoading: Fehler beim Laden
+SorryNo: Sorry nein
+Found: Gefunden
+User: Benutzer
+user: Benutzer
+Users: Benutzer
+Role: Rolle
+Roles: Rollen
+Admin: Admin
+Administrator: Administrator
+administrator: Administrator
+users.view: Benutzer anzeigen
+users.manage: Verwalten von Benutzern
+roles.view: Rollen anzeigen
+roles.manage: Verwalten von Rollen
+roles.assign: Zuweisen von Rollen
+UserName: Benutzername
+FirstName: Vorname
+LastName: Nachname
+FullName: Vollständiger Name
+Email: E‑mail
+JobTitle: Berufsbezeichnung
+PhoneNumber: Telefonnummer
+Password: Passwort
+RememberMe: erinnern Sie sich an mich
+IfMember: Wenn Mitglied
+NotAMember: Kein Mitglied
+OrSignInWith: Oder melden Sie sich mit
+AddPicture: Bild hinzufügen
+ArticleTitle: Artikeltitel
+UserTitle: Benutzertitel
+ArticleDescription: Artikelbeschreibung
+ArticleDetails: Artikeldetails
+TopViewed: Top angesehen
+TopSelled: Top verkauft
+NewlyAdded: Neu hinzugefügt
+Related: Verwandte
+RelatedCategory: Verwandte Kategorie
+Random: Zufällige
+UserPermissions: Benutzerberechtigungen
+RolePermissions: Rollenberechtigungen
+Enabled: Aktiviert
+MyDashboard: Mein Dashboard
+MyArticles: Meine Artikel
+Cart: Warenkorb
+ShowDashboardStatistics: Dashboard-Statistiken anzeigen
+ShowDashboardNotifications: Dashboardbenachrichtigungen anzeigen
+ShowDashboardBanner: Dashboard-Banner anzeigen
+ChangePassword: Kennwort ändern
+ForgotPassword: Passwort vergessen
+CurrentPassword: Aktuelles Kennwort
+NewPassword: Neues Passwort
+ConfirmPassword: Kennwort bestätigen
+Mobile: mobil
+Address: Adresse
+City: Stadt
+WebSite: Website
+BirthDate: Geburtsdatum
+Gender: Geschlecht
+MoreInfos: Weitere Infos
+AuthorizingUser: Warten Sie, bis der System benutzerautorisiert ist.
+NotAuthorizedUser: Es tut uns leid, aber Sie sind nicht berechtigt, auf diese Seite zuzugreifen.
+NotAuthenticatedUser: Es tut uns leid, aber Sie sind noch nicht authentifiziert.
+ConfirmEmail: E-Mail-Bestätigung
+SuccessEmailConfirmation: Ihre E-Mail wurde erfolgreich bestätigt
+FailEmailConfirmation: Faillure treten während der Bestätigung auf, Bitte versuchen Sie es erneut
+Recover: Wiederherstellen
+UsernameOrEmail: Benutzername oder E-Mail
+RecoverPassword: Kennwort wiederherstellen
+ResetPassword: Kennwort zurücksetzen
+EmailConfirmation: Bitte überprüfen Sie Ihre E-Mail, um das Abonnement in unserer Anwendung zu bestätigen
+CheckYourEmail: Bitte überprüfen Sie Ihre E-Mail, um Ihr Passwort zurückzusetzen
+UNotFoundOrMNotConfirmed: Geben Sie nicht an, dass der Benutzer nicht existiert oder nicht bestätigt wird
+SuccessPasswordUpdate: Ihr Kennwort wurde erfolgreich aktualisiert
+General: Allgemein
+Details: Details
+AddToCart: In den Warenkorb geben
+Quantity: Menge
+Amount: Menge
+Total: gesamt
+Discount: Rabatt
+Shipping: Versand
+Handling: Handhabung
+Tax: Steuer
+ShippingDiscount: Versandrabatt
+CompletePurchase: Kompletter Kauf
+ResidencyAddress: Wohnadresse
+DeliveryAddress: Lieferadresse
+State: Wohnsitzstaat
+State2: Lieferzustand
+PostalCode: Plz
+CountryCode: Ländercode
+SorryNoItemInYourCart: Leider kein Artikel in Ihrem Warenkorb
+AllsFieldsRequired: Alle Felder Erforderlich
+OptionalFields: Optionale Felder
+ClientInfos: Client-Infos
+YourInfoMustBeUpdated: Ihre Informationen müssen aktualisiert werden

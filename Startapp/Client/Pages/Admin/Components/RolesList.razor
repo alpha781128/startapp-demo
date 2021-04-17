@@ -1,0 +1,36 @@
+﻿
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete"></Confirm>
+
+@if (Roles.Count > 0)
+{
+@foreach (var role in Roles)
+{
+<div class="d-flex col-example">
+    <div class="w-100 mx-1">
+        <p class="mb-1"><small>@Translate.Keys["Name"]:<em> @role.Name</em></small></p>
+        <p class="mb-1"><small>@Translate.Keys["Description"]:<em> @role.Description</em></small></p>
+    </div>
+    <div class="flex-shrink-1" style="width: 44px !important">
+        <AuthorizeView Policy="@Policies.ManageAllRolesPolicy">
+            <a data-toggle="tooltip" data-placement="top" title="update ..." class="btn-floating m-0 mt-1 mr-1 btn-sm aqua-gradient" @onclick="@(()=>Update(role))"><i class="fas fa-pencil-alt"></i></a>
+            <a data-toggle="tooltip" data-placement="top" title="delete ..." class="btn-floating m-0 mt-1 mr-1 btn-sm peach-gradient" @onclick="@(()=>Delete(role))"><i class="far fa-trash-alt"></i></a>
+        </AuthorizeView>
+    </div>
+</div>
+                    <hr />} }
+
+else
+{
+
+<div class="container text-center my-3">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
+            <h3 class="font-weight-bold text-white peach-gradient py-3">
+                <strong> @Message </strong> <i class="far fa-sad-cry"></i>
+            </h3>
+        </div>
+    </div>
+</div>}
+
+
+

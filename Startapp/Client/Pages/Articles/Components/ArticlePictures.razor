@@ -1,0 +1,37 @@
+﻿
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete"></Confirm>
+
+
+@if (Pics.Count > 0){
+
+                    <div class="row px-md-2 mt-3">
+
+                        <!--First column-->
+                        <div class="col-md-12">
+
+                            <div id="mdb-lightbox-ui"></div>
+
+                            <!--Full width lightbox-->
+                            <div class="mdb-lightbox no-margin">
+                                @foreach (var pic in Pics)
+                                {
+
+                <figure class="col-md-4 col-lg-5 mr-md-2 mb-3 img-div card-md img-md">
+                    <a href="@pic.NSource" data-size="640x420">
+                        <img src="@pic.MSource" class="img-fluid img-max">
+                    </a>
+                    <button class="btn-sm m-0 btn-outline-pink p-0 px-1 del-img" @onclick="@(()=>Delete(pic.Id.ToString()))">
+                        <i class="fas fa-times pink-text my-0"></i>
+                    </button>
+
+                </figure>
+                }
+                            </div>
+                            <!--/Full width lightbox-->
+
+                        </div>
+                        <!--/First column-->
+
+                    </div> 
+                    
+                    }

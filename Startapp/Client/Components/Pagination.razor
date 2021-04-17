@@ -1,0 +1,11 @@
+﻿<nav aria-label="Page navigation example">
+    <ul class="pagination pagination-circle justify-content-center pg-blue mb-0">
+        @foreach (var link in _links)
+        {
+            <li @onclick="() => OnSelectedPage(link)" class="page-item @(link.Enabled ? null : "disabled") @(link.Active ? "active" : null)">
+                <span class="page-link waves-effect waves-effect" href="#">@link.Text</span>
+            </li>           
+        }
+    </ul>
+</nav>
+<br class="mb-3" />

@@ -1,0 +1,98 @@
+﻿@page "/settings"
+@inherits SettingsBase
+@implements IDisposable
+<!--Accordion wrapper-->
+
+<main class="m-0">
+    <div class="row mb-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <!-- Accordion card -->
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingOne1">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+                           aria-controls="collapseOne1">
+                            <h5 class="mb-0">
+                                @Translate.Keys["Settings"] <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                        <div class="card-body mx-1">
+                            <EditForm EditContext="@ConfigurationContext" OnValidSubmit="@UpdateUser">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <InputSelect id="Language" class="browser-default custom-select" @bind-Value="@Configuration.Language" searchable="Search here..">
+                                            @foreach (var language in Languages)
+                                            {
+                                                <option value="@language.Culture">@language.LocalName</option>
+                                            }
+                                        </InputSelect>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="switch">
+                                            <label>
+                                                <InputCheckbox Id="ShowDashboardBanner" type="checkbox" @bind-Value="@Configuration.ShowDashboardBanner" />
+                                                <span class="lever"></span> @Translate.Keys["ShowDashboardBanner"]
+                                            </label>
+                                        </div>
+                                        <div class="switch">
+                                            <label>
+                                                <InputCheckbox Id="ShowDashboardNotifications" type="checkbox" @bind-Value="@Configuration.ShowDashboardNotifications" />
+                                                <span class="lever"></span> @Translate.Keys["ShowDashboardNotifications"]
+                                            </label>
+                                        </div>
+                                        <div class="switch">
+                                            <label>
+                                                <InputCheckbox Id="ShowDashboardStatistics" type="checkbox" @bind-Value="@Configuration.ShowDashboardStatistics" />
+                                                <span class="lever"></span> @Translate.Keys["ShowDashboardStatistics"]
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <ValidationSummary style="display:none" />
+                                <div class="d-flex">
+                                    <div class="mr-auto">
+                                    </div>
+                                    <div class="">
+                                        @if (IsDefaultParams)
+                                        {
+                                            <button type="button" @onclick="@(()=>ResetParams())" disabled class="btn peach-gradient btn-rounded z-depth-1a">@Translate.Keys["Reset"]</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="button" @onclick="@(()=>ResetParams())" disabled="@(FormValid)" class="btn peach-gradient btn-rounded z-depth-1a">@Translate.Keys["Reset"]</button>
+                                        }
+
+                                        @if (!IsBusy)
+                                        {
+                                            <button type="submit" disabled="@(!FormValid)" class="btn blue-gradient btn-rounded z-depth-1a">@Translate.Keys["Save"]</button>
+                                        }
+                                        else
+                                        {
+                                            <button type="submit" disabled="@(!FormValid)" class="disabled btn blue-gradient btn-rounded z-depth-1a"><span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>@Translate.Keys["Saving"]</button>
+                                        }
+                                    </div>
+                                </div>
+
+                            </EditForm>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</main>

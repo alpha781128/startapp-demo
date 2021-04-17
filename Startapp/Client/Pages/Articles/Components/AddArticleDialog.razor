@@ -1,0 +1,160 @@
+﻿
+@inherits AddArticleDialogBase
+
+
+<div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="articleModalLabel"
+     aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header mb-0">
+                <h5 class="modal-title" id="articleModalLabel">@DialogTitle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mt-0 p-1" style="min-height:440px !important">
+
+                <ul class="nav md-pills pills-aqua-gradient pills-rounded m-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel11" role="tab">@Translate.Keys["General"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel12" role="tab">@Translate.Keys["Price"] & @Translate.Keys["Tax"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel13" role="tab">@Translate.Keys["Pictures"]</a>
+                    </li>                  
+                </ul>
+                <!-- Tab panels -->
+
+                <EditForm Model="@Article" OnValidSubmit="@HandleValidSubmit">
+                    <Blazored.FluentValidation.FluentValidationValidator />
+                    <div class="tab-content pt-0">
+                        <ValidationSummary />
+
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="Title">@Translate.Keys["ArticleTitle"]: </label>
+                                        <InputText id="Title" class="form-control" @bind-Value="@Article.Title" placeholder="@Translate.Keys["ArticleTitle"]"></InputText>
+                                        <ValidationMessage For="@(() => Article.Title)" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Description">@Translate.Keys["ArticleDescription"]: </label>
+                                        <InputTextArea rows="3" id="Description" class="form-control" @bind-Value="@Article.Description" placeholder="@Translate.Keys["ArticleDescription"]"></InputTextArea>
+                                        <ValidationMessage For="@(() => Article.Description)" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Detail">@Translate.Keys["ArticleDetails"]: </label>
+                                        <InputTextArea rows="5" id="Detail" class="form-control" @bind-Value="@Article.Detail" placeholder="@Translate.Keys["ArticleDetails"]"></InputTextArea>
+                                        <ValidationMessage For="@(() => Article.Detail)" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Panel 1-->
+                        <!--Panel 2-->
+                        <div class="tab-pane fade" id="panel12" role="tabpanel" style="min-height:234px !important">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="BuyingPrice">@Translate.Keys["BuyingPrice"]: </label>
+                                        <InputNumber id="BuyingPrice" class="form-control" @bind-Value="@Article.BuyingPrice" placeholder="@Translate.Keys["BuyingPrice"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.BuyingPrice)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="OldPrice">@Translate.Keys["OldPrice"]: </label>
+                                        <InputNumber id="OldPrice" class="form-control" @bind-Value="@Article.OldPrice" placeholder="@Translate.Keys["OldPrice"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.OldPrice)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="SellingPrice">@Translate.Keys["SellingPrice"]: </label>
+                                        <InputNumber id="SellingPrice" class="form-control" @bind-Value="@Article.SellingPrice" placeholder="@Translate.Keys["SellingPrice"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.SellingPrice)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="UnitsInStock">@Translate.Keys["UnitsInStock"]: </label>
+                                        <InputNumber id="UnitsInStock" class="form-control" @bind-Value="@Article.UnitsInStock" placeholder="@Translate.Keys["UnitsInStock"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.UnitsInStock)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Discount">@Translate.Keys["Discount"]: </label>
+                                        <InputNumber id="Discount" class="form-control" @bind-Value="@Article.Discount" placeholder="@Translate.Keys["Discount"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.Discount)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Tax">@Translate.Keys["Tax"]: </label>
+                                        <InputNumber id="Tax" class="form-control" @bind-Value="@Article.Tax" placeholder="@Translate.Keys["Tax"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.Tax)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Shipping">@Translate.Keys["Shipping"]: </label>
+                                        <InputNumber id="Shipping" class="form-control" @bind-Value="@Article.Shipping" placeholder="@Translate.Keys["Shipping"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.Shipping)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Handling">@Translate.Keys["Handling"]: </label>
+                                        <InputNumber id="Handling" class="form-control" @bind-Value="@Article.Handling" placeholder="@Translate.Keys["Handling"]"></InputNumber>
+                                        <ValidationMessage For="@(() => Article.Handling)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Panel 2-->
+                        <!--Panel 3-->
+                        <div class="tab-pane fade" id="panel13" role="tabpanel" style="min-height:234px !important">
+                            @if (Article.Id > 0)
+                            {
+                                <ImageUpload OnChange="SavePicture" Id="@Article.Id.ToString()" Table="article" />
+                            }
+
+                            <Pictures Pics="Pics" DeleteEventCallback="DeletePicture"></Pictures>
+
+                        </div>
+                        <!--/.Panel 3-->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">@Translate.Keys["Save"]</button>
+                        <button type="button" class="btn btn-secondary" @onclick="@Close">@Translate.Keys["Close"]</button>
+                    </div>
+                </EditForm>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+

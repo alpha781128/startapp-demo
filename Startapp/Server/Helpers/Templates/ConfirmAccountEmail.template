@@ -1,0 +1,6 @@
+﻿<p>Hello {user},</p>
+<p>Thanks for chosing our Template Startapp-pro! 
+Please confirm your email address by clicking on the link below. </p>
+<p><a href='{url}'>click here to confirm your inscription to Startapp-pro</a></p>
+<p><br /></p>
+<p>Startapp Template</p>

@@ -1,0 +1,77 @@
+﻿@inherits RegisterDialogBase
+@implements IDisposable
+<!-- Modal -->
+<div class="modal fadeInDown" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-md" role="document">
+        <!--Content-->
+        <div class="modal-content form-elegant">
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 dark-grey-text font-weight-bold my-0" id="myModalLabel">
+                    <strong>@Translate.Keys["Register"]</strong>
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="(()=>CloseRegisterModal(true))">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mx-2">
+                <!--Body-->
+                <EditForm autocomplete="off" EditContext="@EditContext" OnValidSubmit="@RegisterUser">
+                    <Blazored.FluentValidation.FluentValidationValidator />
+                    <div id="RegisterAlert"></div>
+
+                    <div class="md-form">
+                        <LaInputText type="text" id="UserName" @bind-Value="User.UserName" class="form-control" />
+                        <label for="UserName">@Translate.Keys["UserName"]</label>
+                        <ValidationMessage For="@(() => User.UserName)" />
+                    </div>
+                    <div class="md-form">
+                        <LaInputText type="email" id="Email" @bind-Value="User.Email" class="form-control" />
+                        <label for="Email">@Translate.Keys["Email"]</label>
+                        <ValidationMessage For="@(() => User.Email)" />
+                    </div>
+
+                    <div class="md-form">
+                        <LaInputText type="password" id="Password" @bind-Value="User.NewPassword" class="form-control" />
+                        <label for="Password">@Translate.Keys["Password"]</label>
+                        <ValidationMessage For="@(() => User.NewPassword)" />
+                    </div>
+                    <div class="md-form">
+                        <LaInputText type="password" id="ConfirmPpassword" @bind-Value="User.ConfirmPassword" class="form-control" />
+                        <label for="ConfirmPpassword">@Translate.Keys["ConfirmPassword"]</label>
+                        <ValidationMessage For="@(() => User.ConfirmPassword)" />
+                    </div>
+
+                    <ValidationSummary style="display:none" />
+                    <div class="row">
+                        <div class="text-center col mx-0 px-0 mr-2 col mb-1">
+                            @if (!IsBusy)
+                            {
+                                <button type="submit" disabled="@(!FormValid)" class="btn blue-gradient btn-block btn-rounded z-depth-1a">@Translate.Keys["SignIn"]</button>
+                            }
+                            else
+                            {
+                                <button type="submit" disabled="@(!FormValid)" class="disabled btn blue-gradient btn-block btn-rounded z-depth-1a"><span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>@Translate.Keys["SignIn"]...</button>
+                            }
+                        </div>
+                        <div class="text-center col mx-0 px-0 col mb-1">
+                            <button type="button" disabled="@(IsBusy)" class="btn bg-warning btn-block btn-rounded z-depth-1a" data-dismiss="modal" @onclick="(()=>CloseRegisterModal(true))">@Translate.Keys["Cancel"]</button>
+                        </div>
+                    </div>
+
+                </EditForm>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer mx-5 pt-1 mb-1">
+                <p class="font-small grey-text d-flex justify-content-end">
+                    @Translate.Keys["IfMember"]? <a class="blue-text ml-1" href="" @onclick="(()=>GoToLogin())">@Translate.Keys["SignIn"] </a>
+                </p>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- Modal -->

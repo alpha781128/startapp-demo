@@ -1,0 +1,80 @@
+﻿@page "/profile"
+@inject ILanguageContainerService Translate
+
+<main class="m-0">
+    <div class="row mb-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <!-- Accordion card -->
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingOne1">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+                           aria-controls="collapseOne1">
+                            <h5 class="mb-0">
+                                @Translate.Keys["General"] <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                        <div class="card-body mx-1">
+                            <Public></Public>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                           aria-expanded="false" aria-controls="collapseTwo2">
+                            <h5 class="mb-0">
+                                @Translate.Keys["Details"] <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                        <div class="card-body mx-1">
+                            <Details></Details>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingTree3">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTree3"
+                           aria-expanded="false" aria-controls="collapseTree3">
+                            <h5 class="mb-0">
+                                @Translate.Keys["MoreInfos"] ... <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseTree3" class="collapse" role="tabpanel" aria-labelledby="headingTree3" data-parent="#accordionEx">
+                        <div class="card-body mx-1">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</main>

@@ -1,0 +1,166 @@
+AppTitle: Стартап
+Home: Дома
+Articles: Статьи
+Article: Статьи
+Data: Данных
+Contact: Контакт
+SignIn: Войти
+SignOut: Выйти
+SignUp: Регистрация
+LogIn: Войти
+LogOut: Выход из системы
+Register: Зарегистрировать
+Settings: Параметры
+Profile: Профиль
+Add: Добавить
+Update: Обновление
+Delete: Удалить
+Added: Добавили
+Updated: Обновлено
+Deleted: Удалены
+LoadSuccess: Загружено успешно
+AddSuccess: Добавлено успешно
+UpdateSuccess: Обновлено успешно
+DeleteSuccess: Удалено успешно
+Successfully: Успешно
+FailedToload: Не удалось загрузить
+FailedToAdd: Не удалось добавить
+FailedToDelete: Не удалось удалить
+FailedToUpdate: Не удалось обновить
+Search: Поиск
+Save: Сохранить
+Saving: Сохранение...
+Cancel: Отмена
+Close: Закрыть
+Confirm: Подтвердить
+Previous: Предыдущей
+Next: Следующий
+Title: Название
+Name: Имя
+Description: Описание
+Price: Цена
+BuyingPrice: Покупная цена
+SellingPrice: Цена продажи
+OldPrice: Старая цена
+Negotiable: Договорная
+UnitsInStock: Единицы на складе
+Duration: Длительность
+Customer: Клиентов
+Category: Категории
+ArticleCategory: Категория статьи
+Order: Заказ
+OrderItems: Заказать товары
+Photo: Фото
+Picture: Картину
+Pictures: Фотографии
+Permission: Разрешение
+Language: Язык
+Conversation: Разговор
+Message: Сообщение
+Configuration: Конфигурации
+Introduction: Знакомство
+ContactUs: Свяжитесь с нами
+About: О
+MinimizeMenu: Свести к минимуму меню
+ProfileDetails: Детали профиля
+Reset: Сброс
+AreYouSureToDel: Вы уверены, что хотите удалить
+ConfirmDelete: Подтвердить удаление
+Loading: Загрузка...
+ErrorLoading: Загрузка ошибок
+SorryNo: Извините, нет
+Found: Нашел
+User: Пользователя
+user: Пользователя
+Users: Пользователей
+Role: Роль
+Roles: Роли
+Admin: Администратора
+Administrator: Администратора
+administrator: Администратора
+users.view: Просмотр пользователей
+users.manage: Управление пользователями
+roles.view: Просмотр ролей
+roles.manage: Управление ролями
+roles.assign: Назначение ролей
+UserName: Имя пользователя
+FirstName: Имя
+LastName: Фамилия
+FullName: Полное имя
+Email: Электронной почты
+JobTitle: Название должности
+PhoneNumber: Номер телефона
+Password: Пароль
+RememberMe: Запоми меня
+IfMember: Если участник
+NotAMember: Не участник
+OrSignInWith: Или войти с
+AddPicture: Добавить картинку
+ArticleTitle: Название статьи
+UserTitle: Название пользователя
+ArticleDescription: Описание статьи
+ArticleDetails: Подробная информация о статье
+TopViewed: Топ просмотрено
+TopSelled: Топ продается
+NewlyAdded: Добавленный
+Related: Связанным с
+RelatedCategory: Похожая категория
+Random: Случайных
+UserPermissions: Разрешения пользователей
+RolePermissions: Разрешения на роль
+Enabled: Включен
+MyDashboard: Моя панель мониторинга
+MyArticles: Мои статьи
+Cart: Корзину
+ShowDashboardStatistics: Показать статистику панели мониторинга
+ShowDashboardNotifications: Показать уведомления панели мониторинга
+ShowDashboardBanner: Показать баннер приборной панели
+ChangePassword: Изменение пароля
+ForgotPassword: Забытый пароль
+CurrentPassword: Текущий пароль
+NewPassword: Новый пароль
+ConfirmPassword: Подтверждение пароля
+Mobile: Мобильных
+Address: Адрес
+City: Города
+WebSite: Веб-сайт
+BirthDate: Дата рождения
+Gender: Гендерного
+MoreInfos: Более подробная информация
+AuthorizingUser: Пожалуйста, подождите, пока система завершит авторизацию пользователя.
+NotAuthorizedUser: Извините, но вы не уполномочены получить доступ к этой странице.
+NotAuthenticatedUser: Извините, но вы еще не проверены.
+ConfirmEmail: Подтверждение электронной почты
+SuccessEmailConfirmation: Ваша электронная почта была успешно подтверждена
+FailEmailConfirmation: Faillure происходят во время подтверждения, пожалуйста, попробуйте еще раз
+Recover: Восстановить
+UsernameOrEmail: Имя пользователя или электронная почта
+RecoverPassword: Восстановление пароля
+ResetPassword: Сброс пароля
+EmailConfirmation: Пожалуйста, проверьте свою электронную почту, чтобы подтвердить подписку на наше приложение
+CheckYourEmail: Пожалуйста, проверьте свою электронную почту, чтобы сбросить пароль
+UNotFoundOrMNotConfirmed: Не раскрывайте, что пользователь не существует или не подтвержден
+SuccessPasswordUpdate: Ваш пароль успешно обновляется
+General: Общее
+Details: Детали
+AddToCart: Добавить в корзину
+Quantity: Количество
+Amount: Сумма
+Total: Общая
+Discount: Скидка
+Shipping: Доставка
+Handling: Обработки
+Tax: Налог
+ShippingDiscount: Скидка на доставку
+CompletePurchase: Полная покупка
+ResidencyAddress: Адрес проживания
+DeliveryAddress: Адрес доставки
+State: Состояние проживания
+State2: Состояние доставки
+PostalCode: Почтовый индекс
+CountryCode: Код страны
+SorryNoItemInYourCart: К сожалению нет пункта в корзину
+AllsFieldsRequired: Требуется все поля
+OptionalFields: Дополнительные поля
+ClientInfos: Информация о клиентах
+YourInfoMustBeUpdated: Ваша информация должна быть обновлена

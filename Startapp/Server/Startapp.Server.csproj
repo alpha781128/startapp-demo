@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>9433d991-3371-4c0e-9963-a77ea108916e</UserSecretsId>
+    <Authors>Lakhdar A</Authors>
+    <Company>Startapp Web Services</Company>
+    <Product>Startapp.Pro</Product>
+    <Description>Web Services built using ASP.NET CORE WEB API, secured by IdentityServer4</Description>
+    <Copyright>Startapp Company 2020</Copyright>
+    <PackageIcon>Startapp.ico</PackageIcon>
+    <ApplicationIcon>Startapp.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\Startapp.Client.csproj" />
+    <ProjectReference Include="..\Shared\Startapp.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Helpers\Templates\ConfirmAccountEmail.template" />
+    <None Remove="Helpers\Templates\PlainTextTestEmail.template" />
+    <None Remove="Helpers\Templates\ResetPasswordEmail.template" />
+    <None Remove="Helpers\Templates\TestEmail.template" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Helpers\Templates\ConfirmAccountEmail.template" />
+    <EmbeddedResource Include="Helpers\Templates\PlainTextTestEmail.template" />
+    <EmbeddedResource Include="Helpers\Templates\ResetPasswordEmail.template" />
+    <EmbeddedResource Include="Helpers\Templates\TestEmail.template" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grant.Extension.Delegation.IdentityServer4" Version="1.0.1" />
+    <PackageReference Include="IdentityModel" Version="4.6.0" />
+    <PackageReference Include="IdentityServer4" Version="4.1.1" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.1" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="4.1.1" />
+    <PackageReference Include="MailKit" Version="2.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="PayPalCheckoutSdk.DotNet5" Version="1.0.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="5.5.0" />
+    
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Folder Include="Logs\" />
+    <Folder Include="StaticFiles\Images\" />
+  </ItemGroup>
+
+
+</Project>

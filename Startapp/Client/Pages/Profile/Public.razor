@@ -1,0 +1,130 @@
+﻿@inherits PublicBase
+@implements IDisposable
+
+
+<EditForm EditContext="@ProfileContext" OnValidSubmit="@UpdateUser">
+    <Blazored.FluentValidation.FluentValidationValidator />
+    <!-- Grid row -->
+    <div class="form-row text-secondary">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="Email">@Translate.Keys["Email"]</label>
+                <LaInputText id="Email" type="text" @bind-Value="Profile.Email" class="form-control" />
+                <ValidationMessage For="@(() => Profile.Email)" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="UserName"> @Translate.Keys["UserName"]</label>
+                <LaInputText id="UserName" type="text" @bind-Value="Profile.UserName" class="form-control" />
+                <ValidationMessage For="@(() => Profile.UserName)" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row text-secondary">
+        <!-- Grid column -->
+        <div class="col-md-6">
+            <!-- Material input -->
+            <div class="form-group ">
+                <label for="FirstName"> @Translate.Keys["FirstName"]</label>
+                <LaInputText id="FirstName" type="text" @bind-Value="Profile.FirstName" class="form-control" />
+                <ValidationMessage For="@(() => Profile.FirstName)" />
+            </div>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-6">
+            <!-- Material input -->
+            <div class="form-group">
+                <label for="LastName"> @Translate.Keys["LastName"]</label>
+                <LaInputText id="LastName" type="text" @bind-Value="Profile.LastName" class="form-control" />
+                <ValidationMessage For="@(() => Profile.LastName)" />
+            </div>
+        </div>
+    </div>
+
+    <div class="form-row text-secondary">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="PhoneNumber"> @Translate.Keys["PhoneNumber"]</label>
+                <LaInputText id="PhoneNumber" type="text" @bind-Value="Profile.PhoneNumber" class="form-control" />
+                <ValidationMessage For="@(() => Profile.PhoneNumber)" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="JobTitle"> @Translate.Keys["JobTitle"]</label>
+                <LaInputText id="JobTitle" type="text" @bind-Value="Profile.JobTitle" class="form-control" />
+                <ValidationMessage For="@(() => Profile.JobTitle)" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Collapse buttons -->
+    <div class="hide-div text-secondary">
+        <button class="btn btn-primary hide-div" type="button" @onclick="@ChangePassword" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+            @Translate.Keys["ChangePassword"]?
+        </button>
+    </div>
+    <!-- / Collapse buttons -->
+    <!-- Collapsible element -->
+    <div class="collapse text-secondary" id="collapseExample">
+        <div class="mt-3">
+            <div class="form-row text-secondary">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="CurrentPassword"> @Translate.Keys["CurrentPassword"]</label>
+                        <LaInputText id="CurrentPassword" type="password" @bind-Value="Profile.CurrentPassword" class="form-control" />
+                        <ValidationMessage For="@(() => Profile.CurrentPassword)" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="NewPassword"> @Translate.Keys["NewPassword"]</label>
+                        <LaInputText type="password" id="NewPassword" @bind-Value="Profile.NewPassword" class="form-control" />
+                        <ValidationMessage For="@(() => Profile.NewPassword)" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="ConfirmPassword"> @Translate.Keys["ConfirmPassword"]</label>
+                        <LaInputText type="password" id="ConfirmPassword" @bind-Value="Profile.ConfirmPassword" class="form-control" />
+                        <ValidationMessage For="@(() => Profile.ConfirmPassword)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Collapsible element -->
+
+    <div class="form-row text-secondary">
+        <div class="col-md-6">
+            <div>
+                <img src="@ProfilePic" style="max-width: 160px" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <ImageUpload OnChange="SavePicture" Id="@Profile.Id.ToString()" Table="user" />
+            <div class="alert alert-info" role="alert">
+                Add a picture,<strong> means erase ! </strong> the old one.
+            </div>
+        </div>
+    </div>
+    <ValidationSummary style="display:none" />
+    <div class="d-flex">
+        <div class="mr-auto">
+        </div>
+        <div>
+            @if (!IsBusy)
+            {
+                <button type="submit" disabled="@(!FormValid)" class="btn blue-gradient btn-block btn-rounded z-depth-1a">@Translate.Keys["Save"]</button>
+            }
+            else
+            {
+                <button type="submit" disabled="@(!FormValid)" class="disabled btn blue-gradient btn-block btn-rounded z-depth-1a"><span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>@Translate.Keys["Saving"]</button>
+            }
+        </div>
+    </div>
+</EditForm>
+
