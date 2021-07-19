@@ -2,3 +2,5 @@
 ﻿2)- For our solution we use sqlexpress, if your preferences to use others like localdb or sql lite ... change appsettings in the server project;
 ﻿3)- Execute your project, it will run the migration automatically...
 ﻿4)- For pro-version "not free" with all functionnalities contact me at alpha781128@hotmail.fr or alpha781128@gmail.com
+﻿5)- For Debug you can change ConnectionStrings in appsettings.development.json file in Server project if you don't have sqlexpress instace installed from Server=.\\sqlexpress to Server=.\\YourInstanceName
+﻿6)- This project work with dotnet core 5, do not upgrade to any dotnet 6 preview version
